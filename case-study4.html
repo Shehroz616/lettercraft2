@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latter Craft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/nav-s.js"></script>
+</head>
+
+<body>
+    <header w3-include-html="navbar.html">
+
+    </header>
+
+    <main>
+
+        <section class="  pb-lg-5 ">
+
+            <div class="container pt-5 mb-lg-5">
+                <div class="row">
+                    <div class="col-lg-5 ">
+
+                        <div class="cn-sec text-start">
+                            <div class="latter-craft pb-3 ">
+                                PERSONAL DOCUMENT <br><span>
+                                    LEGAL TRANSLATION<span>
+                            </div>
+                            <div class="paragraph pt-3">
+
+                                Letter Crafts successfully localized a complex legal document from Chinese to English
+                                for a leading law firm in Singapore. Expert legal linguists, a three-step translation
+                                process, a technical glossary, and quality control ensured accurate interpretation. We
+                                delivered a 100,000-word document for court submission, exemplifying our tailored
+                                services for your industry's needs.
+
+
+
+
+                            </div>
+                            <a href="assets/pdf/case-studies/Legal.pdf">
+                                <div class="row ">
+
+                                    <button type="button" class="btn mybtn mt-5 mb-5">Download CaseStudy</button>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class=" col-lg-5  ms-auto ">
+
+                        <img class="img-fluid w-100 " src="assets/images/CASE-4.png" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+    <footer w3-include-html="footer.html">
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script>
+
+        includeHTML();
+
+
+        $('.item-slider-imges').owlCarousel({
+            nav: false,
+            dots: false,
+            margin: 30,
+            responsive: {
+                0: {
+                    // center: true,
+                    merge: true,
+                    items: 2.3,
+
+                },
+                576: {
+                    items: 3.2,
+                    merge: true,
+                },
+
+            }
+
+
+        });
+        $('.my-tabs-cr').owlCarousel({
+            nav: false,
+            dots: false,
+            items: 5,
+            // margin: 0,
+            responsive: {
+                0: {
+                    // center: true,
+                    merge: true,
+                    items: 2.5,
+
+                },
+                576: {
+                    items: 3.2,
+                    merge: true,
+                },
+
+            }
+
+
+        });
+        $('.review-samples').owlCarousel({
+            center: true,
+            nav: false,
+            items: 4,
+            loop: true,
+            margin: 80,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                576: {
+                    items: 1,
+
+                },
+                992: {
+                    items: 3,
+
+                }
+            }
+
+
+        });
+        $('.silder-text').owlCarousel({
+            center: true,
+            nav: false,
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 8000,
+
+
+        });
+        $('.brands').owlCarousel({
+            dots: false,
+            nav: true,
+            items: 5,
+            loop: true,
+            margin: 10,
+            center: true,
+            autoplay: false,
+
+
+            responsive: {
+                0: {
+                    items: 2.1,
+                    nav: false,
+                    mergeFit: false
+
+                },
+                992: {
+                    items: 5,
+
+                }
+            }
+
+        });
+
+
+        $('.review-slider').owlCarousel({
+            nav: false,
+            items: 4,
+            loop: false,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                576: {
+                    items: 2,
+
+                },
+                992: {
+                    items: 4,
+
+                }
+            }
+        })
+
+    </script>
+</body>
+
+</html>
