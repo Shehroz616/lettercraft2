@@ -238,6 +238,10 @@
     line-height: normal;
 }
 
+.silder-text.owl-carousel .owl-item {
+    height: 100%;
+}
+
 .silder-text.owl-carousel .owl-item img {
     display: inline;
 }
@@ -1081,9 +1085,9 @@
 
 .under-line-text::after {
     content: "";
-    width: 70%;
+    width: 100%;
     position: absolute;
-    top: 98%;
+    top: 85%;
     height: 3px;
     background-color: #0189CF;
     left: 0;
