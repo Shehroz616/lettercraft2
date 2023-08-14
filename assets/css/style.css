@@ -136,7 +136,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: clamp(12px, calc(1.2vw + 1px), 24px);
-    padding: 24px;
+    padding: 10px;
     color: #FFFFFF;
     background: #0089CF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -2388,6 +2388,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .about-right-img-2 {
+        
+        width: 70%;
+    }
     .blue-box{
         padding: 8px;
     }
@@ -2422,6 +2426,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:576px) {
+    .about-right-img-2 {
+        
+        width: 68%;
+    }
     .img-dis-n{
         display: none !important;
     }
