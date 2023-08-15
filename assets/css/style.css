@@ -1081,7 +1081,8 @@ main{
     font-family: "dm-bold";
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(18px, calc(2.1vw + 1px), 30px);
+    /* font-size: calc(1.1vw + 10px); */
+    font-size: clamp(18px, calc(1.1vw + 10px), 32px);
     line-height: 1.5;
     color: #3C3B3B;
     position: relative;
@@ -1372,8 +1373,8 @@ margin-bottom: 6%;
 .about-right-img {
     position: absolute;
     right: 0px;
-    top: -160px;
-    width: 100%;
+    top: 80px;
+    width: 50%;
 }
 .img-ab {
     /* margin-left: 13%; */
@@ -1864,7 +1865,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     main{
-        margin-top: 140px;
+        padding-top: 89px;
     }
 
     .nav.nav-tabs .nav-item {
@@ -2448,7 +2449,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .main{
-        margin-top: 110px;
+        padding-top: 76px;
     }
 
     .auto-width {
