@@ -1826,6 +1826,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .navbar-expand-xl .navbar-nav .nav-link{
         padding: 8px 10px;
     }
+    .blue-box{
+        border-radius: 16px;
+        padding: 14px;
+    }
 }
 @media(max-width: 1200px) {
     
