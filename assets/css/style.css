@@ -462,6 +462,17 @@ main{
     line-height: 1.5;
 }
 
+.paragraph-2 {
+    margin: auto;
+    color: #3C3B3B;
+    font-family: 'dm-regular';
+    /* font-size: calc(1vw + 9px); */
+    font-size: clamp(16px,  calc(1vw + 9px), 28px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
 .p-span {
     color: #0089CF;
 }
@@ -773,7 +784,10 @@ main{
 
 .latter-craft-2 span {
     color: #0089CF;
+}
 
+.latter-craft-3{
+    font-size: clamp(16px, calc(1.2vw + 13px), 36px) ;
 }
 
 .paragraphhh {
@@ -823,7 +837,7 @@ main{
     font-style: normal;
     font-weight: 700;
     font-size: clamp(20px, calc(2.5vw + 1px), 48px);
-    line-height: 2;
+    line-height: 1.5;
     /* or 117% */
 
     display: flex;
@@ -837,6 +851,14 @@ main{
     background: #FFFFFF;
     box-shadow: -0.5px -0.5px 10px 0px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
+    border: none;
+}
+
+.team-card {
+    background: #FFFFFF;
+    box-shadow: -0.5px -0.5px 10px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 30px;
+    border: none;
     border: none;
 }
 
@@ -863,12 +885,11 @@ main{
 
 .card-title-name {
     font-family: 'lato-bold';
-    font-style: normal;
     font-weight: 700;
-
-    font-size: clamp(18px, calc(0.9vw + 1px), 18px);
-    line-height: 27px;
+    /* font-size:  calc(1vw + 5px); */
+    font-size: clamp(18px, calc(1vw + 5px), 24px);
     color: #000000;
+    margin-top: 20px;
 }
 
 .card-para {
@@ -877,7 +898,7 @@ main{
     font-weight: 400;
     font-size: clamp(16px, calc(0.8vw + 1px), 16px);
     line-height: 24px;
-    color: #697587;
+    color: #7A7A7A;
 
 }
 
@@ -1385,7 +1406,7 @@ margin-bottom: 6%;
     position: absolute;
     right: 0px;
     top: 80px;
-    width: 50%;
+    width: 47%;
 }
 .img-ab {
     /* margin-left: 13%; */
@@ -2392,7 +2413,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     }
     .tag-im{
-        width:25%;
+        width:30px;
     }
     .ab-tag-img {
         display: flex;
@@ -2526,7 +2547,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
    
-
+    .rew img{
+        
+    }
 
     .exp-section-p {
         padding: 12%;
