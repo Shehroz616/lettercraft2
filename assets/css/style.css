@@ -1867,6 +1867,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     main{
         padding-top: 92px;
     }
+    .img-bg-ex {
+        width: 57%;
+    }
+
 }
 @media(max-width: 1200px) {
     
