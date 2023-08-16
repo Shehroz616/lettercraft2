@@ -1319,7 +1319,8 @@ main{
     font-family: 'dm-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(16px, calc(1vw + 1px), 16px);
+    font-size: calc(0.5vw + 7px);
+    font-size: clamp(12px, calc(0.5vw + 7px), 16px);
     line-height: 1.5;
     color: #697587;
 
