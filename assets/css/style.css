@@ -1089,10 +1089,10 @@ main{
 }
 
 .text {
-    font-family: "dm-medium";
+    font-family: "dm-regular";
     font-style: normal;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.8;
     display: flex;
     align-items: center;
     color: #3C3B3B;
