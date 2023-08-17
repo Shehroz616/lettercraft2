@@ -1604,64 +1604,71 @@
                                 Get a Quote in 30 mins
 
                             </div>
-                            <div class="input-group flex-nowrap my-input mt-3">
+                            <form name="contact" method="POST" data-netlify="true">
+                                <div class="input-group flex-nowrap my-input mt-3">
 
-                                <input type="text" class="form-control my-form-con" placeholder="Name" aria-label="name"
-                                    aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="name" placeholder="Name" aria-label="name"
+                                        aria-describedby="addon-wrapping">
 
-                            </div>
-                            <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                <input type="text" class="form-control my-form-con" placeholder="E-mail"
-                                    aria-label="email" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="email" placeholder="E-mail"
+                                        aria-label="email" aria-describedby="addon-wrapping">
 
-                            </div>
-                            <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                <input type="text" class="form-control my-form-con" placeholder="Phone"
-                                    aria-label="phone" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="phone" placeholder="Phone"
+                                        aria-label="phone" aria-describedby="addon-wrapping">
 
-                            </div>
-                            <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                <input type="text" class="form-control my-form-con" placeholder="Source Language"
-                                    aria-label="srclng" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="source_language" placeholder="Source Language"
+                                        aria-label="srclng" aria-describedby="addon-wrapping">
 
-                            </div>
-                            <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                <input type="text" class="form-control my-form-con" placeholder="To Language"
-                                    aria-label="tolang" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="to_language" placeholder="To Language"
+                                        aria-label="tolang" aria-describedby="addon-wrapping">
 
-                            </div>
-                            <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                <input type="text" class="form-control my-form-con" placeholder="Delivery Options"
-                                    aria-label="deloptn" aria-describedby="addon-wrapping">
+                                    <select class="form-control my-form-con" name="delivery_opt[]">
+                                        <option disabled="" selected="">Delivery Option</option>
+                                        <option>By email</option>
+                                        <option>By Singpost (free)</option>
+                                        <option>By courier ($20)</option>
+                                        <option>Self collect - by prior appointment from Notary office @The Adelphi</option>
+                                    </select>
 
-                            </div>
-                            <div class="input-group my-input">
+                                </div>
+                                <div class="input-group my-input">
 
-                                <textarea class="form-control my-form-con" style="height: 108px;"
-                                    placeholder="Your Message" aria-label="With textarea"></textarea>
-                            </div>
-                            <div class="form-check text-start mt-3">
-                                <input class="form-check-input my-check " type="checkbox" value=""
-                                    id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    Urgent request
-                                </label>
-                            </div>
-                            <div class="form-check  text-start mt-3">
-                                <input class="form-check-input my-check" type="checkbox" value="" id="flexCheckChecked"
-                                    checked>
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Notarization & Authentication required
-                                </label>
-                            </div>
-                            <div class="text-lg-start text-center">
-                                <button type="button" class="btn mybtn mt-5 form-btn">Submit</button>
-                            </div>
+                                    <textarea class="form-control my-form-con" name="message" style="height: 108px;"
+                                        placeholder="Your Message" aria-label="With textarea"></textarea>
+                                </div>
+                                <div class="form-check text-start mt-3">
+                                    <input class="form-check-input my-check " name="urgent_request" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Urgent request
+                                    </label>
+                                </div>
+                                <div class="form-check  text-start mt-3">
+                                    <input class="form-check-input my-check" name="authentication" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Notarization & Authentication required
+                                    </label>
+                                </div>
+                                <div class="text-lg-start text-center">
+                                    <button type="button" class="btn mybtn mt-5 form-btn">Submit</button>
+                                </div>
+                            </form>
                         </div>
                         <div class="row mt-lg-4 mt-3 gy-5">
 
