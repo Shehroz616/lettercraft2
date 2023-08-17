@@ -465,7 +465,7 @@ main {
     color: #3C3B3B;
     font-family: 'dm-regular';
     /* font-size: calc(0.79vw + 9px); */
-    font-size: clamp(16px, calc(0.79vw + 9px), 24px);
+    font-size: clamp(14px,  calc(0.79vw + 9px), 24px);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
