@@ -2147,7 +2147,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     .ic-img4 {
         width: auto;
-        height: 49px;
+        height: 46px;
+        margin-top: -10px;
     }
 
     .my-div-p {
