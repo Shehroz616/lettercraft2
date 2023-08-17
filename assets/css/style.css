@@ -2647,6 +2647,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 @media (max-width: 375px) {
 
+    .img-bg-ex{
+        top: 140px;
+    }
     .auto-width {
         width: 100%;
     }
