@@ -2112,16 +2112,23 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         height: 1rem;
     }
 
+    .ic-img {
+        width: auto;
+        height: 40px;
+    }
     .ic-img2 {
-        width: 20%;
+        width: auto;
+        height: 40px;
     }
 
     .ic-img3 {
-        width: 19%;
+        width: auto;
+        height: 35px;
     }
 
     .ic-img4 {
-        width: 16.3%;
+        width: auto;
+        height: 49px;
     }
 
     .my-div-p {
