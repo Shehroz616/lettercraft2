@@ -1031,7 +1031,7 @@ main {
     font-family: 'dm-medium';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(16px, calc(1.2vw + 1px), 28px);
+    font-size: clamp(14px, calc(1.2vw + 1px), 28px);
 
     color: #3C3B3B;
 }
