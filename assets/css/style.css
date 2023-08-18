@@ -137,7 +137,7 @@ main {
     font-family: 'dm-medium';
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(12px, calc(1.2vw + 1px), 24px);
+    font-size: clamp(14px, calc(1.2vw + 1px), 24px);
     padding: 15px 25px;
     color: #FFFFFF;
     background: #0089CF;
@@ -1329,8 +1329,8 @@ main {
     font-family: 'dm-bold';
     font-style: normal;
     font-weight: 500;
-    font-size: calc(0.8vw + 5px);
-    /* font-size: clamp(12px, calc(0.5vw + 10px), 20px); */
+   
+    font-size: clamp(12px, calc(0.8vw + 5px), 20px);
     line-height: 1;
     letter-spacing: -0.75px;
     color: #000000;
@@ -1368,7 +1368,7 @@ main {
     font-family: 'dm-regular';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: clamp(14px, calc(1.2vw + 1px), 24px);
     line-height: 1;
     color: #FFFFFF;
 
