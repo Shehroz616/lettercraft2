@@ -2506,6 +2506,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -14px !important;
+    }
+    main {
+        padding-top: 61px;
+    }
     .accordion-button:not(.collapsed)::after {
         background-image: url(../images/dash-lg.svg);
         background-color: #0089cf;
