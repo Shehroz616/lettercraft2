@@ -1482,6 +1482,7 @@ main {
 .accordion-button{
     /* font-size: calc(0.75vw + 8px); */
     font-size: clamp(16px, calc(0.75vw + 8px),20px);
+    align-items: flex-start;
 }
 
 .accordion-button:not(.collapsed) {
@@ -2507,7 +2508,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 @media(max-width:767px) {
     .owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: -14px !important;
+        margin-top: -10px !important;
     }
     main {
         padding-top: 61px;
