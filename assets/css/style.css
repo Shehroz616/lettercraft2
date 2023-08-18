@@ -132,7 +132,9 @@ main {
 .navbar-nav .nav-link.show {
     color: #0189CF;
 }
-
+.rew-im{
+    width:60px;
+}
 .mybtn {
     font-family: 'dm-medium';
     font-style: normal;
