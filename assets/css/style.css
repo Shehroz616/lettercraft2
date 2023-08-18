@@ -899,14 +899,14 @@ main {
     font-family: 'dm-bold';
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(12px, calc(1.2vw + 1px), 24px);
+    font-size: clamp(14px, calc(1.2vw + 1px), 24px);
     line-height: 35px;
     color: #000000;
 
 }
 
 .sample-heading .samm-text {
-    font-size:  clamp(10px, calc(1vw + 1px), 16px);
+    font-size:  clamp(12px, calc(1vw + 1px), 16px);
     font-family: "dm-regular";
     color: black;
     display: flex;
@@ -1161,7 +1161,7 @@ main {
     width: 100%;
     position: absolute;
     top: 85%;
-    height: 3px;
+    height: 2px;
     background-color: #0189CF;
     left: 0;
 
@@ -1358,8 +1358,6 @@ main {
 
 .my-form-con:focus {
 
-
-    border-color: none;
 
     box-shadow: none;
 }
@@ -2508,7 +2506,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 @media(max-width:767px) {
     .owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: -10px !important;
+        margin-top: 0px ;
     }
     main {
         padding-top: 61px;
@@ -2649,7 +2647,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .img-bg-ex {
-        top: 200px;
+        top: 150px;
         width: 100%;
     }
 
