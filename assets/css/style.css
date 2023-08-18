@@ -2502,6 +2502,13 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .accordion-button:not(.collapsed)::after {
+        background-image: url(../images/dash-lg.svg);
+        background-color: #0089cf;
+        padding: 12px 12px;
+        background-position: center;
+        border-radius: 8px;
+    }
     .about-right-img-2 {
 
         width: 93%;
