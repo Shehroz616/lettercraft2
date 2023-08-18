@@ -602,7 +602,7 @@ main {
 .footer-secc {
 
     font-family: 'lato-regular';
-    font-size: clamp(16px, calc(1vw + 1px), 18px);
+    font-size: clamp(14px, calc(1vw + 1px), 18px);
     font-style: normal;
     font-weight: 400;
     line-height: 32px;
@@ -610,7 +610,7 @@ main {
 }
 
 .footer-secc a {
-    font-size: clamp(10px, calc(0.47vw + 7px), 16px);
+    font-size: clamp(12px, calc(0.47vw + 7px), 16px);
     cursor: pointer;
 }
 
@@ -1332,7 +1332,7 @@ main {
     font-style: normal;
     font-weight: 500;
    
-    font-size: clamp(12px, calc(0.8vw + 5px), 20px);
+    font-size: clamp(14px, calc(0.8vw + 5px), 20px);
     line-height: 1;
     letter-spacing: -0.75px;
     color: #000000;
@@ -1400,7 +1400,7 @@ main {
     letter-spacing: 0.3px;
     color: #FFFFFF;
     /* font-size: calc(0.47vw + 7px); */
-    font-size: clamp(10px, calc(0.47vw + 7px), 16px);
+    font-size: clamp(12px, calc(0.47vw + 7px), 16px);
 }
 
 .ser-footer {
