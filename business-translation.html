@@ -1186,29 +1186,29 @@
 
             });
             $('.brands').owlCarousel({
-                dots: false,
-                nav: true,
-                items: 5,
-                loop: true,
-                margin: 10,
-                center: true,
-                autoplay: false,
+            dots: false,
+            nav: true,
+            items: 5,
+            loop: true,
+            margin: 10,
+            center: true,
+            autoplay: false,
 
 
-                responsive: {
-                    0: {
-                        items: 2.1,
-                        nav: false,
-                        mergeFit: false
+            responsive: {
+                0: {
+                    items: 2.1,
+                    nav: false,
+                    mergeFit: false,
+                    dots: true,
+                },
+                992: {
+                    dots: false,
+                    nav: true,
+                },
+            }
 
-                    },
-                    992: {
-                        items: 5,
-
-                    }
-                }
-
-            });
+        });
 
 
             $('.review-slider').owlCarousel({
