@@ -2130,6 +2130,11 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .bottom-line-foo {
+        padding-bottom: 0px;
+        border-bottom: 1px solid white;
+    }
+    
     .navbar-toggler-icon {
         width: 1rem;
         height: 1rem;
