@@ -813,14 +813,16 @@ main {
     margin: auto;
     color: #3C3B3B;
     font-family: 'dm-regular';
-    font-size: 20px;
+    font-size: clamp(14px, calc(1.2vw + 1px), 28px);
 }
-
+.Reviews{
+    margin-top: 10%;
+}
 .paragraphhh span {
     margin: auto;
     color: #0089CF;
     font-family: 'dm-regular';
-    font-size: 20px;
+    font-size: clamp(14px, calc(1.2vw + 1px), 28px);
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -2160,10 +2162,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         position: relative;
     }
 
-    .under-line-text {
-        padding-bottom: 6px;
-    }
-
+   
     .under-line-text::after {
         width: 100%;
     }
@@ -2507,6 +2506,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .Reviews{
+        display: none;
+    }
     .owl-theme .owl-nav.disabled+.owl-dots {
         margin-top: 0px ;
     }
