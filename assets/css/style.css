@@ -471,7 +471,16 @@ main {
     font-weight: 400;
     line-height: 1.5;
 }
-
+.paragraph-bold {
+    margin: auto;
+    color: #3C3B3B;
+    font-family: 'dm-bold';
+    /* font-size: calc(0.79vw + 9px); */
+    font-size: clamp(16px,  calc(0.79vw + 9px), 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+}
 .paragraph-2 {
     margin: auto;
     color: #3C3B3B;
@@ -816,7 +825,7 @@ main {
     font-size: clamp(14px, calc(1.2vw + 1px), 28px);
 }
 .Reviews{
-    margin-top: 10%;
+    margin-top: 10% !important;
 }
 .paragraphhh span {
     margin: auto;
@@ -893,7 +902,7 @@ main {
     font-family: 'dm-bold';
     font-style: normal;
     font-weight: 500;
-    font-size: clamp(12px, calc(1.2vw + 1px), 24px);
+    font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     line-height: 1.5;
     color: #0189CF;
 
@@ -973,10 +982,10 @@ main {
 .price-text {
     color: #000;
     font-family: "dm-regular";
-    font-size: 16px;
+    font-size:clamp(12px, calc(0.79vw + 3px), 16px);
     font-style: normal;
     font-weight: 400;
-    line-height: 34.56px;
+  line-height: 1.2;
     /* 216% */
 
 }
@@ -984,10 +993,10 @@ main {
 .price-text span {
     color: #000;
     font-family: "dm-bold";
-    font-size: 24px;
+    font-size: clamp(16px, calc(0.79vw + 9px), 24px);
     font-style: normal;
     font-weight: 400;
-    line-height: 34.56px;
+    line-height: 1.5;
     /* 216% */
 
 }
