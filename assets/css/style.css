@@ -894,7 +894,7 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: clamp(12px, calc(1.2vw + 1px), 24px);
-    line-height: 35px;
+    line-height: 1.5;
     color: #0189CF;
 
 }
@@ -904,7 +904,7 @@ main {
     font-style: normal;
     font-weight: 500;
     font-size: clamp(14px, calc(1.2vw + 1px), 24px);
-    line-height: 35px;
+    line-height: 1.2;
     color: #000000;
 
 }
