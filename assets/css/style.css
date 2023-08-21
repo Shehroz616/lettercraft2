@@ -1333,7 +1333,9 @@ main {
     left: 0;
     z-index: -1;
 }
-
+#form-sec{
+    position: relative;
+}
 .auto-width {
     width: 120% !important;
 }
@@ -1435,7 +1437,7 @@ main {
     font-family: 'lato-regular';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(16px, calc(1.2vw + 1px), 16px);
+    font-size: clamp(12px, calc(1.2vw + 1px), 16px);
     line-height: 1.5;
     color: #FFFFFF;
 }
@@ -2665,7 +2667,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .img-bg-ex {
-        top: 150px;
+        top: 94px;
         width: 100%;
     }
 
