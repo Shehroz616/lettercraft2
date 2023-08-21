@@ -1826,7 +1826,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 .my-tab-c ul .item:hover {
     color: #0089CF;
-    text-decoration: underline 2px solid #0089CF;
+  
 }
 
 .my-tab-c ul .item {
@@ -1899,6 +1899,13 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 .wrapper {
     width: 70%;
+}
+.sampl-car{
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 5%);
+    box-shadow: -3px -3px -3px -3px rgb(0 0 0 / 14%) !important;
+    border: none;
 }
 
 .nav-link.dropdown-toggle i::before {
@@ -2100,13 +2107,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         padding-top: 24px;
     }
 
-    .paragrap {
-
-        font-size: 16px;
-    }
-
-
-
+  
 
 
     .my-nav {
@@ -2522,6 +2523,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    #overlay-sec{
+        display: none !important;
+    }
     .Reviews{
         display: none;
     }

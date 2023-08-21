@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cn-sec  pb-5 px-lg-0 px-3">
+                        <div class="cn-sec  pb-lg-5 pb-3 px-lg-0 px-3">
                             <div class="latter-craft-2 text-lg-start text-center pt-lg-3">
                                 LETTER CRAFTS<span> TRANSLATIONS<span>
                             </div>
@@ -540,9 +540,9 @@
 
             </div>
         </section>
-        <section class="samples  pb-5 d-lg-none d-block pt-3">
+        <section class="samples  pt-2 pb-5 d-lg-none d-block">
             <div class="container">
-                <div class="cn-sec text-center  pb-lg-5 0 px-3">
+                <div class="cn-sec text-center pt-lg-5 pb-lg-5 0 px-lg-0 px-3">
                     <div class="latter-craft">
 
                         SUCCESS <span>STORIES <span>
@@ -554,17 +554,15 @@
                         available!
                     </div>
                 </div>
-                <div class="my-tab-c pt-3">
+                <div class="my-tab-c mt-3 nav-underline">
 
-                    <ul class="" id="myTab nav-underline" role="tablist">
-
-
+                    <ul class="p-0 mb-0" id="myTab " role="tablist">
                         <div class="owl-carousel owl-theme my-tabs-cr">
                             <div class="item">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="gov-tab-2" data-bs-toggle="tab"
                                         data-bs-target="#gov-tab-pane-2" type="button" role="tab"
-                                        aria-controls="gov-tab-pane-2" aria-selected="true">SG brands</button>
+                                        aria-controls="gov-tab-pane-2" aria-selected="true">SG Brands</button>
                                 </li>
                             </div>
                             <div class="item">
@@ -572,7 +570,7 @@
                                     <button class="nav-link" id="banking-tab-2" data-bs-toggle="tab"
                                         data-bs-target="#banking-tab-pane-2" type="button" role="tab"
                                         aria-controls="banking-tab-pane-2" aria-selected="false">Banking
-                                        finance</button>
+                                        Finance</button>
                                 </li>
                             </div>
                             <div class="item">
@@ -586,8 +584,7 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="it-tab-2" data-bs-toggle="tab"
                                         data-bs-target="#it-tab-pane-2" type="button" role="tab"
-                                        aria-controls="it-tab-pane-2" aria-selected="false">IT &
-                                        Telecom</button>
+                                        aria-controls="it-tab-pane-2" aria-selected="false">IT & Telecom</button>
                                 </li>
                             </div>
                             <div class="item">
@@ -926,8 +923,8 @@
                                   
                                 </div>
                                 <ul>
-                                    <li class="pb-2"><span> ICA, MOM, LTA, ROM.</span></li>
-                                    <li class="pb-2"><span> Visa, Immigration & Embassy submissions</span></li>
+                                    <li class=""><span> ICA, MOM, LTA, ROM.</span></li>
+                                    <li class=""><span> Visa, Immigration & Embassy submissions</span></li>
 
 
                                 </ul>
@@ -947,13 +944,13 @@
 
                                 </div>
                                 <ul>
-                                    <li class="pb-2"><span>Business and E-commerce translations</span></li>
-                                    <li class="pb-2"><span> Banking, Legal and Contracts translations</span></li>
-                                    <li class="pb-2"><span>Personal Documents</span></li>
-                                    <li class="pb-2"><span>Websites, Apps and Product Description
+                                    <li class=""><span>Business and E-commerce translations</span></li>
+                                    <li class=""><span> Banking, Legal and Contracts translations</span></li>
+                                    <li class=""><span>Personal Documents</span></li>
+                                    <li class=""><span>Websites, Apps and Product Description
                                             translations</span>
                                     </li>
-                                    <li class="pb-2"><span>Advertising and Marketing translations</span></li>
+                                    <li class=""><span>Advertising and Marketing translations</span></li>
 
                                 </ul>
                             </div>
@@ -1081,10 +1078,10 @@
                     <div class="col-lg-5  ">
 
                         <div class="cn-sec text-lg-start px-lg-0 px-3 text-center">
-                            <div class="latter-craft pb-3 ">
+                            <div class="latter-craft pb-1 ">
                                 PERSONAL DOCUMENT <br><span>TRANSLATIONS FOR ICA<span>
                             </div>
-                            <div class="paragraph pt-3 d-lg-block d-none">
+                            <div class="paragraph  d-lg-block d-none">
 
                                 This Case study on successful translation and notarization services for international
                                 document legalization. Efficient process ensures instant delivery of precise
@@ -1236,29 +1233,30 @@
 
             });
             $('.brands').owlCarousel({
-                dots: false,
-                nav: true,
-                items: 5,
-                loop: true,
-                margin: 10,
-                center: true,
-                autoplay: true,
+            dots: false,
+            nav: true,
+            items: 5,
+            loop: true,
+            margin: 10,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 8000,
 
 
-                responsive: {
-                    0: {
-                        items: 2.1,
-                        nav: false,
-                        mergeFit: false,
-                        dots: true,
-                    },
-                    992: {
-                        dots: false,
-                        nav: true,
-                    },
-                }
+            responsive: {
+                0: {
+                    items: 2.1,
+                    nav: false,
+                    mergeFit: false,
+                    dots: false,
+                },
+                992: {
+                    dots: false,
+                    nav: true,
+                },
+            }
 
-            });
+        });
 
 
             $('.review-slider').owlCarousel({
