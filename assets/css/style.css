@@ -2523,6 +2523,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .exp-section-p {
+        padding: 10%;
+        padding-top: 5%;
+    }
     .cntct-inf {
         font-size: 11px !important;
     }
@@ -2566,11 +2570,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         width: 100%;
     }
 
-    .exp-section-p {
-        padding: 14%;
-        padding-top: 29%;
-    }
-
+   
 
 
     .el-button {
@@ -2676,10 +2676,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     .rew img {}
 
-    .exp-section-p {
-        padding: 12%;
-        padding-top: 32%;
-    }
+   
 
     .img-bg-ex {
         top: 94px;
@@ -2733,11 +2730,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
 
-    .exp-section-p {
-        padding: 10%;
-        padding-top: 15%;
-    }
-
+   
     .service-block {
         height: 68px;
 
