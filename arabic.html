@@ -620,7 +620,7 @@
 
 
             <div class="container-fluid services py-lg-5 py-4 d-lg-block d-none">
-                <div class="row px-lg-5 py-lg-5 py-4 ">
+                <div class="row px-lg-5 py-lg-5 py-lg-4 ">
                     <div class="col-xxl-4 col-xl-5 col-md-6 mx-auto exp-section-p ">
                         <div class="row g-lg-4 g-3">
                             <div class="col-4 ">
@@ -749,8 +749,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid services py-lg-5 py-4 d-lg-none d-block ">
-                <div class="row px-lg-5 py-lg-5 py-4 ">
+            <div class="container-fluid services py-lg-5 py-lg-4 d-lg-none d-block ">
+                <div class="row px-lg-5 py-lg-5 py-lg-4 ">
                     <div class="col-xxl-4 col-xl-5 col-md-6 mx-auto exp-section-p ">
                         <div class="row g-lg-4 g-3">
                             <div class="col-4 ">
@@ -881,6 +881,7 @@
             </div>
 
         </section>
+
         <section class=" mt-lg-5 mt-5 pb-lg-5">
             <div class="container">
                 <div class="cn-sec text-center pt-lg-5  pb-lg-5 ">
@@ -944,7 +945,7 @@
                     </div>
                 </div>
                 <div class="google-rew pt-2 pb-5">
-                    <img class="img-fluid mt-lg-5 mt-5 text-center gool-re-img" src="assets/images/google-review.png"
+                    <img class="img-fluid mt-lg-5  text-center gool-re-img" src="assets/images/google-review.png"
                         alt="">
                 </div>
                 <div class="owl-carousel owl-theme review-slider pb-5">
@@ -1310,7 +1311,8 @@
             loop: true,
             margin: 10,
             center: true,
-            autoplay: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
 
 
             responsive: {
@@ -1318,7 +1320,7 @@
                     items: 2.1,
                     nav: false,
                     mergeFit: false,
-                    dots: true,
+                    dots: false,
                 },
                 992: {
                     dots: false,
@@ -1327,7 +1329,6 @@
             }
 
         });
-
 
         $('.review-slider').owlCarousel({
             nav: false,
