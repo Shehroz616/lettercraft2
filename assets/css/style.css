@@ -2523,6 +2523,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .cntct-inf {
+        font-size: 11px !important;
+    }
+    .rew-im {
+        width: 40px;
+    }
     .service-block{
         background:#0089cf2b;
         
