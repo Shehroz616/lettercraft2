@@ -94,6 +94,9 @@ main {
 .blue-box span {
     font-size: clamp(10px, calc(1vw + 1px), 20px);
 }
+.gool-re-img{
+    width:35%;
+}
 
 .my-drop {
     width: 654px;
@@ -748,6 +751,7 @@ main {
 }
 
 .explore-section {
+    margin-bottom: 6%;
     position: relative;
 }
 
@@ -1925,6 +1929,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1400px) {
+    .qoute-sec-h {
+      
+        height: 60%;
+      
+       
+    }
     .logo {
         width: 100px
     }
@@ -2545,7 +2555,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         display: none;
     }
     .owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: 0px ;
+        margin-top: -1px;
     }
     main {
         padding-top: 61px;
