@@ -35,7 +35,7 @@
                         a signed and stamped Certificate of Translation as the coversheet
 
                     </div>
-                    <div class="row gy-5 mt-4">
+                    <div class="row gy-5 mt-4 px-lg-0 px-3">
                         <div class="col-lg-4">
                             <a target=”_blank”  href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
                                 <div class="card sampl-car">
@@ -161,7 +161,7 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 mt-0">
                             <a target=”_blank”  href="assets/pdf/Tamil/English-Court-Order-Certificate.pdf">
                                 <div class="card sampl-car">
                                     <div class="card-body text-center  my-crad-height">
@@ -177,7 +177,7 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 mt-0">
                             <a target=”_blank”  href="assets/pdf/Spanish/Driving-License-(English).pdf">
                                 <div class="card sampl-car">
                                     <div class="card-body text-center  my-crad-height">
@@ -193,7 +193,7 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 mt-0">
                             <a target=”_blank”  href="assets/pdf/German/Master-Degree.pdf">
                                 <div class="card sampl-car">
                                     <div class="card-body text-center  my-crad-height">
@@ -210,11 +210,11 @@
                     </div>
                 </div>
             </div>
-            <div class="need-lang-sampl text-center mb-lg-5">Need a Language-Sample not listed here? <a href="contact-us.html"><span>Contact </span></a>our support team
+            <div class="need-lang-sampl text-center mb-lg-5 px-lg-0 px-5 pb-5">Need a Language-Sample not listed here? <a href="contact-us.html"><span>Contact </span></a>our support team
                 to see if we can help.</div>
 
         </section>
-        <section class="brands-bg-c  our-mission-sec">
+        <section class="  our-mission-sec brands-bg-c">
             <div class="container pt-5  ">
                 <div class="row">
 
@@ -224,7 +224,7 @@
                                 LET US KNOW YOUR<br>
                                 <span> REQUIREMENTS<span>
                             </div>
-                            <div class="paragraph-2 pt-3 pt-3  text-lg-start text-center d-lg-block d-none">Need more
+                            <div class="paragraph-2 pt-3  text-lg-start text-center d-lg-block d-none">Need more
                                 information or have any<br class="d-lg-block d-none"> questions? Let us
                                 know and our team<br class="d-lg-block d-none">
                                 will get in touch with you to help you <br class="d-lg-block d-none">
@@ -244,7 +244,7 @@
 
                             </video>
                         </div>
-                        <div class="paragraph-2 pt-lg-3  text-lg-start text-center d-lg-none d-block">Need more
+                        <div class="paragraph-2 pt-3  text-lg-start text-center d-lg-none d-block ">Need more
                             information or have any<br class="d-lg-block d-none"> questions? Let us
                             know and our team<br class="d-lg-block d-none">
                             will get in touch with you to help you <br class="d-lg-block d-none">
@@ -297,23 +297,25 @@
             items: 5,
             loop: true,
             margin: 10,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+
+
             responsive: {
                 0: {
-                    items: 1,
-
-                },
-                576: {
-                    items: 2,
-
+                    items: 2.1,
+                    nav: false,
+                    mergeFit: false,
+                    dots: false,
                 },
                 992: {
-                    items: 3,
-
-                }
+                    dots: false,
+                    nav: true,
+                },
             }
 
         });
-
 
         $('.review-slider').owlCarousel({
             nav: false,
