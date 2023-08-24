@@ -2581,7 +2581,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         width: 40px;
     }
     .service-block{
-        background:#0089cf2b;
+        background: rgba(0, 137, 207, 0.05);
         
     }
     
