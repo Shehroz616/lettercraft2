@@ -513,10 +513,10 @@ main {
     color: #3C3B3B;
 
     font-family: 'dm-regular';
-    font-size: 24px;
+    font-size: clamp(12px, calc(1.5vw + 1px), 24px);
     font-style: normal;
-    font-weight: 700;
-    line-height: 43.8px;
+    font-weight: 400;
+    line-height: 1.5;
 
 }
 
@@ -859,7 +859,7 @@ main {
 .latter-craft-P span {
     color: #0089CF;
     font-family: 'dm-bold';
-    font-size: 36px;
+    font-size: clamp(14px, calc(1.8vw + 11px), 36px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -868,7 +868,7 @@ main {
 .latter-craft-s span {
     color: #0089CF;
     font-family: 'dm-bold';
-    font-size: 25px;
+    font-size: clamp(16px, calc(1.7vw + 2px), 15px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1907,7 +1907,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     border-radius: 24px 24px 24px 24px;
     height: 100%;
 }
-
+.box-sh-2{
+    box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 5%);
+    height: 100%;
+}
 .wrapper {
     width: 70%;
 }
@@ -1915,7 +1918,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     border-radius: 12px;
     background: #FFF;
     box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 5%);
-    box-shadow: -3px -3px -3px -3px rgb(0 0 0 / 14%) !important;
+   
     border: none;
     height: 100%;
 }
@@ -1931,6 +1934,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(min-width: 992px) {
+   
     .navbar .container-fluid {
         padding: 0 90px;
     }
@@ -1991,6 +1995,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1200px) {
+    .detail-sec {
+        align-items: center !important;
+        justify-content: left !important;
+    }
 
     .blue-box {
         padding: 13px;
@@ -2076,11 +2084,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 
 
-    .detail-sec {
-
-        align-items: center !important;
-        justify-content: center;
-    }
+    
 
     .owl-carousel.brands .owl-nav button.owl-next {
         top: 15%;
@@ -2184,6 +2188,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+
     .my-col-z {
        
         width: 90%;
