@@ -299,7 +299,9 @@ main {
 .paragraph-f span {
     color: #0089CF;
 }
-
+.img-ssh{
+    box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 5%);
+}
 .my-col-z {
     border-radius: 12px;
     box-shadow: -0.5px -0.5px 10px 0px #0000001A;
@@ -440,7 +442,12 @@ main {
     object-fit: contain;
 }
 
-
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+    height: 100%;
+}
 .contact-info {
 
     justify-content: center;
@@ -545,11 +552,11 @@ main {
 
 .paragraph-f {
     color: #959595;
-    font-size: 16px;
+    font-size: clamp(14px,  calc(0.70vw + 9px), 16px);
     font-family: 'lato-regular';
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.5;
 }
 
 .questi {
@@ -782,7 +789,7 @@ main {
     font-size: clamp(20px, calc(2vw + 10px), 48px);
     font-style: normal;
     font-weight: 700;
-    line-height: 1.5;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
@@ -793,6 +800,7 @@ main {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
@@ -807,6 +815,7 @@ main {
     font-size: clamp(20px, calc(1.8vw + 1px), 40px);
     font-style: normal;
     font-weight: 700;
+    line-height: 1.2;
     line-height: normal;
     text-transform: uppercase;
 }
@@ -817,6 +826,7 @@ main {
 
 .latter-craft-3 {
     font-size: clamp(16px, calc(1.2vw + 13px), 36px);
+    line-height: 1.2;
 }
 
 .paragraphhh {
@@ -1894,7 +1904,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 .sampl-card {
-    border-radius: 24px 24px 0px 0px;
+    border-radius: 24px 24px 24px 24px;
     height: 100%;
 }
 
@@ -1907,6 +1917,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 5%);
     box-shadow: -3px -3px -3px -3px rgb(0 0 0 / 14%) !important;
     border: none;
+    height: 100%;
 }
 
 .nav-link.dropdown-toggle i::before {
@@ -1926,6 +1937,30 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1400px) {
+    .my-tra-2 {
+        TOP: 25%;
+        display: flex;
+        position: absolute;
+        left: 68px;
+        z-index: 1;
+    }
+    .my-tra {
+        TOP: 11%;
+        display: flex;
+        position: absolute;
+        right: 0px;
+        z-index: 1;
+        width: 17%;
+    }
+    .my-tra-3 {
+        TOP: 77%;
+        display: flex;
+        position: absolute;
+        right: 80px;
+        z-index: 1;
+    }
+    
+    
     .qoute-sec-h {
       
         height: 60%;
@@ -2149,6 +2184,11 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .my-col-z {
+       
+        width: 90%;
+       
+    }
     .bottom-line-foo {
         padding-bottom: 0px;
         border-bottom: 1px solid white;
