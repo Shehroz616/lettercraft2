@@ -2713,7 +2713,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         background-position: center;
         border-radius: 8px;
     }
-
+    .accordion-button::after {
+        padding: 12px 12px;
+        background-position: center;
+        background-image: url(../images/plus-lg.svg);
+        border-radius: 8px;
+    }
     .about-right-img-2 {
 
         width: 93%;
