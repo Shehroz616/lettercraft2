@@ -28,8 +28,8 @@
     src: url("/assets/dm-sans/DMSans-Regular.ttf");
 }
 
-.navbar-nav {
-    color: #697587 !important;
+.navbar-nav li a {
+    color: #697587 ;
 
 }
 
@@ -137,7 +137,8 @@ main {
 
 .accordion-button::after {
 
-    background-color: #0089cf21;
+    background-color: #F7F7FF;
+
     border-radius: 8px;
     padding: 15px 15px;
     background-position: center;
@@ -163,8 +164,8 @@ main {
 
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+.navbar-nav li a.nav-link.active,
+.navbar-nav li a.nav-link.show {
     color: #0189CF;
 }
 
@@ -245,7 +246,10 @@ main {
 .img-w-card {
     width: 15%;
 }
-
+.my-row-st {
+    --bs-gutter-y: 3rem;
+    --bs-gutter-x: 5rem;
+}
 .wid {
     width: 70%;
     margin: auto;
@@ -572,17 +576,15 @@ main {
     font-size: clamp(12px, calc(0.5vw + 7px), 16px);
 }
 
-
 .paragraph-dot {
+    margin-top: 1%;
     color: #3C3B3B;
-
     font-family: 'dm-regular';
-
     font-size: clamp(12px, calc(1.5vw + 1px), 24px);
     font-style: normal;
     font-weight: 400;
     line-height: 1.2;
-
+    margin-bottom: 1%;
 }
 
 
@@ -709,11 +711,7 @@ main {
 
 }
 
-.my-row-st {
 
-    --bs-gutter-y: 5rem;
-    --bs-gutter-x: 7rem;
-}
 
 .nav.nav-tabs {
     border: none;
@@ -1296,12 +1294,11 @@ section {
 
 .nav.nav-tabs .nav-link {
     padding: 7px 8px;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'dm-regular';
     color: black;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
-
 .my-tab-c .nav-link.active {
 
     color: #0089CF;
@@ -1313,9 +1310,10 @@ section {
 }
 
 .nav.nav-tabs .nav-link.active {
-    font-family: 'dm-bold';
+    font-family: 'dm-regular';
     text-decoration: underline;
     color: #0089CF;
+    font-weight: 500;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
 
@@ -2260,10 +2258,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     }
 
-    .my-row-st {
-        --bs-gutter-y: 3rem;
-        --bs-gutter-x: 5rem;
-    }
+   
 
 }
 
