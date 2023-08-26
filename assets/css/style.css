@@ -829,7 +829,7 @@ main {
 }
 
 section {
-    margin-top: 5% !important;
+    margin-top: 7% !important;
 
 }
 
@@ -2661,12 +2661,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 @media(max-width:767px) {
     .navbar-toggler {
-        padding-left: 1px !important;
+        
         padding-right: 0px !important;
     }
     .blue-box {
         border-radius: 10px !important;
-        padding: 7px 6px !important;
+       
     }
     .gool-re-img {
         width: 135px;
@@ -2695,7 +2695,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: -1px;
+        margin-top: -15px !important;
     }
 
     main {
