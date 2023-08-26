@@ -829,7 +829,7 @@ main {
 }
 
 section {
-    margin-top: 7% !important;
+    margin-top: 5% !important;
 
 }
 
@@ -2659,6 +2659,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    section {
+        margin-top: 8% !important;
+    
+    }
     .logo {
         width: 105px !important;
     }
