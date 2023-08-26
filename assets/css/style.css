@@ -85,7 +85,7 @@ main {
 }
 
 .logo {
-    width: 180px;
+    width: 130px !important;
 }
 
 .rew-im {
@@ -2059,9 +2059,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .logo {
-        width: 100px
+        width: 130px !important;
     }
-
     .navbar-expand-xl .navbar-nav .nav-link {
         padding: 8px 10px;
     }
@@ -2660,6 +2659,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .logo {
+        width: 105px !important;
+    }
     .navbar-toggler {
         
         padding-right: 0px !important;
