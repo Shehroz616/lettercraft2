@@ -21,9 +21,9 @@
 
     </header>
     <main>
-        <section class="brands-bg-c  qout-po pt-3 mb-5 ">
+        <section class="brands-bg-c  qout-po mt-0 pb-5 ">
 
-            <div class="container  mb-5 pb-5">
+            <div class="container  ">
                 <div class="row">
                     <div class="col-lg-5">
 
@@ -61,10 +61,10 @@
 
 
                             </div>
-                            <div class="row mt-lg-4 mt-2 gy-5">
+                            <div class="row mt-lg-0 mt-2 gy-5 pb-lg-0 pb-5 ">
 
                                 <div class="col-lg-3 col-6 text-center">
-                                    <img class="rew-im "src="assets/images/tag-2.png" alt="">
+                                    <img class="rew-im-2 " src="assets/images/tag-2.png" data-aos="flip-up"alt="">
                                     <div class="icon-text pt-3">
                                         Competitive
                                         <br class="d-lg-block d-none">
@@ -72,20 +72,20 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 text-center">
-                                    <img  class="rew-im " src="assets/images/speed.png" alt="">
+                                    <img class="rew-im-2 " src="assets/images/speed.png" data-aos="flip-up"alt="">
                                     <div class="icon-text pt-3">
                                         Speed
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 text-center">
-                                    <img class="rew-im " src="assets/images/bage.png" alt="">
+                                    <img class="rew-im-2 " src="assets/images/bage.png" data-aos="flip-up" alt="">
                                     <div class="icon-text pt-3">
                                         High <br class="d-lg-block d-none">
                                         Quality
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-6 text-center">
-                                    <img  class="rew-im " src="assets/images/stars.png" alt="">
+                                    <img class="rew-im-2 " src="assets/images/stars.png" data-aos="flip-up" alt="">
                                     <div class="icon-text pt-3">
                                         Customer<br class="d-lg-block d-none">
                                         Satisfaction
@@ -95,83 +95,81 @@
                         </div>
                     </div>
 
-                    <div class=" col-lg-5  ms-auto mt-4">
-                        <div class="px-lg-0 px-3">
-                            <div class="qo-form text-center pt-5 px-4 pb-5">
-                                <div class="head">
-                                    Get a Quote in 30 mins
+                    <div class="col-lg-5 ms-auto col-12 px-lg-0 px-4 mt-5">
+                        <div class="qo-form text-center pt-5 px-4 pb-5">
+                            <div class="head">
+                                Get a Quote in 30 mins
+
+                            </div>
+                            <form name="contact" method="POST" data-netlify="true">
+                                <div class="input-group flex-nowrap my-input mt-3">
+
+                                    <input type="text" class="form-control my-form-con" name="name" placeholder="Name"
+                                        aria-label="name" aria-describedby="addon-wrapping">
 
                                 </div>
-                                <form name="contact" method="POST" data-netlify="true">
-                                    <div class="input-group flex-nowrap my-input mt-3">
+                                <div class="input-group flex-nowrap my-input">
 
-                                        <input type="text" class="form-control my-form-con" name="name"
-                                            placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="email"
+                                        placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
 
-                                    </div>
-                                    <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                        <input type="text" class="form-control my-form-con" name="email"
-                                            placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="phone" placeholder="Phone"
+                                        aria-label="phone" aria-describedby="addon-wrapping">
 
-                                    </div>
-                                    <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                        <input type="text" class="form-control my-form-con" name="phone"
-                                            placeholder="Phone" aria-label="phone" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="source_language"
+                                        placeholder="Source Language" aria-label="srclng"
+                                        aria-describedby="addon-wrapping">
 
-                                    </div>
-                                    <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                        <input type="text" class="form-control my-form-con" name="source_language"
-                                            placeholder="Source Language" aria-label="srclng"
-                                            aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" name="to_language"
+                                        placeholder="To Language" aria-label="tolang" aria-describedby="addon-wrapping">
 
-                                    </div>
-                                    <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group flex-nowrap my-input">
 
-                                        <input type="text" class="form-control my-form-con" name="to_language"
-                                            placeholder="To Language" aria-label="tolang"
-                                            aria-describedby="addon-wrapping">
+                                    <select class="form-select my-form-con" name="delivery_opt[]">
+                                        <option disabled="" selected="">Delivery Option</option>
+                                        <option>By email</option>
+                                        <option>By Singpost (free)</option>
+                                        <option>By courier ($20)</option>
+                                        <option>Self collect - by prior appointment from Notary office @The Adelphi
+                                        </option>
+                                    </select>
 
-                                    </div>
-                                    <div class="input-group flex-nowrap my-input">
+                                </div>
+                                <div class="input-group my-input">
 
-                                        <select class="form-select my-form-con" name="delivery_opt[]">
-                                            <option disabled="" selected="">Delivery Option</option>
-                                            <option>By email</option>
-                                            <option>By Singpost (free)</option>
-                                            <option>By courier ($20)</option>
-                                            <option>Self collect - by prior appointment from Notary office @The Adelphi
-                                            </option>
-                                        </select>
-
-                                    </div>
-                                    <div class="input-group my-input">
-
-                                        <textarea class="form-control my-form-con" name="message" style="height: 108px;"
-                                            placeholder="Your Message" aria-label="With textarea"></textarea>
-                                    </div>
-                                    <div class="form-check text-start mt-3">
-                                        <input class="form-check-input my-check " name="urgent_request" type="checkbox"
-                                            value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Urgent request
-                                        </label>
-                                    </div>
-                                    <div class="form-check  text-start mt-3">
-                                        <input class="form-check-input my-check" name="authentication" type="checkbox"
-                                            value="" id="flexCheckChecked" checked>
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Notarization & Authentication required
-                                        </label>
-                                    </div>
-                                    <div class="text-lg-start text-center">
-                                        <button type="submit" class="btn mybtn mt-5 form-btn">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+                                    <textarea class="form-control my-form-con" name="message" style="height: 108px;"
+                                        placeholder="Your Message" aria-label="With textarea"></textarea>
+                                </div>
+                                <div class="form-check text-start mt-2">
+                                    <input class="form-check-input my-check " name="urgent_request" type="checkbox"
+                                        value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Urgent request
+                                    </label>
+                                </div>
+                                <div class="form-check  text-start mt-2">
+                                    <input class="form-check-input my-check" name="authentication" type="checkbox"
+                                        value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Notarization & Authentication required
+                                    </label>
+                                </div>
+                                <div class="text-lg-start text-center">
+                                    <button type="submit" class="btn mybtn mt-3 form-btn">Submit</button>
+                                </div>
+                            </form>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -179,15 +177,15 @@
 
         <section>
             <div class="container">
-                <div class="cn-sec  pt-2  text-center px-lg-0 px-3">
-                    <div class="latter-craft mt-4">
+                <div class="cn-sec    text-center px-lg-0 px-3">
+                    <div class="latter-craft">
                         Perdagangan, e-Dagang, terjemahan <span><br>dalam 80+ bahasa </span>
 
                     </div>
 
                     <div class="paragraph pt-3 pb-lg-0 pb-5">
 
-                        Lagi cari jasa penerjemah berser2fifikasi di Singapura? Stop sekarang juga! Kami menyediakan<br
+                        Lagi cari jasa penerjemah bersertifikasi di  Singapura? Stop sekarang juga! Kami menyediakan<br
                             class="d-lg-block d-none">
                         jasa terjemahan yang cepat dan terjangkau untuk semua kebutuhanmu, mulai dari aplikasi<br
                             class="d-lg-block d-none">
@@ -204,10 +202,10 @@
         <section class="mb-5 pb-lg-5 mt-lg-5">
             <div class="container ">
                 <div class="row g-lg-5 px-3 px-lg-0 gy-3">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 px-lg-5">
 
                         <a target="_blank" href="assets/pdf/Indonesian/Driving-Licence-Sun-Na (EN) Rev1.pdf">
-                            <div class="card sampl-car">
+                            <div class="card sampl-car"data-aos="flip-right">
                                 <div class="card-body text-center ">
                                     <img class="img-fluid w-100" src="assets/images/ger-1.png" alt="">
 
@@ -215,16 +213,16 @@
                                         Driving Licence
                                     </div>
                                     <div class="price-text">
-                                        Starting from:<span>$45.00 </span>
+                                        Starting from:&nbsp;<span>S$45.00 </span>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 px-lg-5">
                         <a target="_blank" href="assets/pdf/Indonesian/Riandy-Birth-Certificate-Riandy (1).pdf">
-                            <div class="card sampl-car">
+                            <div class="card sampl-car"data-aos="flip-right">
                                 <div class="card-body text-center ">
                                     <img class="img-fluid  w-100" src="assets/images/g-2.JPG" alt="">
 
@@ -232,7 +230,7 @@
                                             class="d-lg-block d-none">
                                     </div>
                                     <div class="price-text">
-                                        Starting from:<span>$40.00 </span>
+                                        Starting from: &nbsp;<span>S$40.00 </span>
                                     </div>
                                 </div>
                             </div>
@@ -240,9 +238,9 @@
                     </div>
 
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 px-lg-5">
                         <a target="_blank" href="assets/pdf/Indonesian/Junior-High-School-Diploma_Ika H.pdf">
-                            <div class="card sampl-car">
+                            <div class="card sampl-car"data-aos="flip-right">
                                 <div class="card-body text-center ">
                                     <img class="img-fluid  w-100" src="assets/images/ger-3.png" alt="">
 
@@ -250,7 +248,7 @@
                                             class="d-lg-block d-none">
                                     </div>
                                     <div class="price-text">
-                                        Starting from:<span>$35.00 </span>
+                                        Starting from:&nbsp;<span>S$35.00 </span>
                                     </div>
                                 </div>
                             </div>
@@ -267,22 +265,20 @@
 
         </section>
 
-        <section class="brands-bg-c  mt-5 translation-p">
-            <div class="container py-5">
-                <div class="cn-sec text-center pt-lg-5  pb-5 0">
-                    <div class="latter-craft">
+        <section class="brands-bg-c   translation-p pb-3">
+            <div class="container py-lg-3">
+                <div class="cn-sec text-center ">
+                    <div class="latter-craft  pt-3">
                         TRANSLATION <span>PROCESS <span>
                     </div>
-                    <div class="paragraph-dot"> Translators always risk inappropriate spill-over of source-<br
-                            class="d-lg-block d-none">
-                        language idiom and usage into the target-language <br class="d-lg-block d-none"> translation.
+                    <div class="paragraph-dot"> We strive for a smooth experience for<br> our clients every single time.
                     </div>
 
                 </div>
 
                 <div class="row gy-lg-0 gy-3 px-lg-0 px-3">
                     <div class="col-lg-3 col-6 text-center my-div-p">
-                        <img class="img-fluid ic-img2 ms-5" src="assets/images/commas.png" alt="">
+                        <img class="img-fluid ic-img2 ms-lg-5 ms-4" src="assets/images/commas.png" data-aos="flip-up"alt="">
                         <div class="count-text d-flex justify-content-center">
                             <div class="count">
                                 1
@@ -296,7 +292,7 @@
                         </div>
                         <div class="detail-sec ">
                             <ul>
-                                <hr class="h-l-u-p">
+                                <hr class="h-l-u-p mt-0">
                                 <li>Get an online quote</li>
                                 <li>We accept all file formats</li>
                                 <li>Share documents online</li>
@@ -305,7 +301,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3  col-6  text-center my-div-p">
-                        <img class="img-fluid ic-img  ms-5" src="assets/images/Vector.png" alt="">
+                        <img class="img-fluid ic-img  ms-lg-5 ms-4" src="assets/images/Vector.png" data-aos="flip-up"alt="">
                         <div class="count-text d-flex justify-content-center">
                             <div class="count">
                                 2
@@ -317,7 +313,7 @@
                         </div>
                         <div class="detail-sec text-start">
                             <ul>
-                                <hr class="h-l-u-p">
+                                <hr class="h-l-u-p mt-0">
                                 <li>Professional translators start working</li>
                                 <li>Proof reading and reviews</li>
                                 <li>Translation drafts shared for your <br class="d-none d-lg-block"> approval.</li>
@@ -325,7 +321,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-6  text-center my-div-p">
-                        <img class="img-fluid ic-img3 ms-5" src="assets/images/mail.png" alt="">
+                        <img class="img-fluid ic-img3 ms-lg-5 ms-4" src="assets/images/mail.png"data-aos="flip-up" alt="">
                         <div class="count-text d-flex justify-content-center">
                             <div class="count">
                                 3
@@ -338,7 +334,7 @@
                         </div>
                         <div class="detail-sec text-start">
                             <ul>
-                                <hr class="h-l-u-p">
+                                <hr class="h-l-u-p mt-0">
                                 <li>Final version emailed as soft copies</li>
                                 <li>Preview final versions in the <span><a href="samples-form.html">sample
                                             section</span></a></li>
@@ -349,7 +345,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-6  text-center my-div-p">
-                        <img class="img-fluid ic-img4 ms-5" src="assets/images/handph.png" alt="">
+                        <img class="img-fluid ic-img4 ms-lg-5 ms-4" src="assets/images/handph.png" data-aos="flip-up"alt="">
                         <div class="count-text d-flex justify-content-center">
                             <div class="count">
                                 4
@@ -361,7 +357,7 @@
                         </div>
                         <div class="detail-sec text-start">
                             <ul>
-                                <hr class="h-l-u-p">
+                                <hr class="h-l-u-p mt-0">
                                 <li>Full support guaranteed for revisions (If any)</li>
                                 <li>Translations can be notarized upon request</li>
                                 <li>Affidavit signing and Court appearance
@@ -380,7 +376,7 @@
             </div>
         </section>
         <section>
-            <div class="container pt-5  mt-lg-2 pb-5">
+            <div class="container  ">
                 <div class="row px-lg-5 px-3 gy-2">
                     <div class="latter-craft text-center mb-3">
                         FREQUENT ASKED <span> QUESTIONS <span>
@@ -512,13 +508,14 @@
                 </div>
             </div>
         </section>
-        <section class="brands-bg-c  qout-po pt-3 pb-lg-5 ">
+        <section class="brands-bg-c  qout-po pb-lg-5 ">
 
             <div class="container  mb-5">
                 <div class="cn-sec    ">
-                    <div class="latter-craft mt-4 text-center">
+                    <div class="latter-craft  text-center 
+                     pt-4">
 
-                        WHY <span> LETTERCRAFTS? <span>
+                        WHY  <span> LETTERCRAFTS? <span>
                     </div>
                 </div>
                 <div class="row">
@@ -539,18 +536,18 @@
                         <div class=" text-center  px-2  ">
                             <div class="paragrap pt-3 text-start mt-lg-5  px-lg-0 px-3">
                                 <div class="paragraph-bold mb-3">We are an innovative translation service in
-                                        Singapore,
-                                        breaking
-                                        language barriers with accurate, affordable, and fast translation
-                                        solutions.
+                                    Singapore,
+                                    breaking
+                                    language barriers with accurate, affordable, and fast translation
+                                    solutions.
                                 </div>
-                                <div class="d-flex mb-3"><i class="fa-solid fa-check pe-3 pt-2"
+                                <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2"
                                         style="color: #0189cf;"></i>
                                     <div>Translations
                                         accepted by all Singapore government bodies.</div>
                                 </div>
 
-                                <div class="d-flex mb-3"><i class="fa-solid fa-check pe-3 pt-2"
+                                <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2"
                                         style="color: #0189cf;"></i>
                                     <div>We provide
                                         quick,
@@ -565,13 +562,13 @@
                                     </li>
 
                                 </ul>
-                                <div class="d-flex mb-3"><i class="fa-solid fa-check pe-3 pt-2"
+                                <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2"
                                         style="color: #0189cf;"></i>
                                     <div>We value your
                                         business and understand the importance of accurate translations.</div>
                                 </div>
 
-                                <div class="d-flex mb-3"><i class="fa-solid fa-check pe-3 pt-2"
+                                <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2"
                                         style="color: #0189cf;"></i>
                                     <div> Our expert
                                         native
@@ -602,7 +599,8 @@
             </div>
 
         </section>
-        <section class=" explore-section pb-lg-5 mt-lg-5 pt-lg-5  mt-4">
+
+        <section class=" explore-section ">
             <div id="overlay-sec">
             </div>
             <div class="container">
@@ -610,131 +608,152 @@
                     <div class="latter-craft">
                         TRANSLATION <span> SERVICES<span>
                     </div>
-                    <div class="paragraph">We strive for a smooth experience for our clients every <br
-                            class="d-lg-block d-none"> single time.
+                    <div class="paragraph">Letter Crafts is your partner for over 80 languages.<br
+                            class="d-lg-block d-none">
+                        Our team of native translators and industry experts<br class="d-lg-block d-none">
+                        can cater to all your translation needs.
                     </div>
 
                 </div>
             </div>
             <img class="img-bg-ex d-md-block d-none" src="assets/images/explore_shape.png" alt="">
-            <img class="img-bg-ex d-none" src="assets/images/res-img0bg-2.png" alt="">
+            <img class="img-bg-ex d-none" src="assets/images/res-img0bg-2.png"  alt="">
 
 
             <div class="container-fluid services py-lg-5 py-4 d-lg-block d-none">
                 <div class="row px-lg-5 py-lg-5 py-lg-4 ">
-                    <div class="col-xxl-4 col-xl-5 col-md-6 mx-auto exp-section-p ">
+                    <div class="col-xxl-4 col-xl-5 col-md-6 col-12 mx-xl-auto mx-lg-auto exp-section-p ">
                         <div class="row g-lg-4 g-3">
                             <div class="col-4 ">
+                                <a href="chinese-lang.html">
+                                    <div class="service-block ser-1 "data-aos="flip-left">
+                                        <img class="img-fluid explore-icons" src="assets/images/bage.png" alt="">
 
-                                <div class="service-block ser-1 ">
-                                    <img class="img-fluid explore-icons" src="assets/images/bage.png" alt="">
+                                        <div class="explore-text">
+                                            <a href="chinese-lang.html"> Chinese<br class="d-lg-block d-none">
+                                                Language </a>
+                                        </div>
 
-                                    <div class="explore-text">
-                                        <a href="chinese-lang.html"> Chinese<br class="d-lg-block d-none">
-                                            Language </a>
                                     </div>
-
-                                </div>
+                                </a>
 
                             </div>
                             <div class="col-4 ">
-                                <div class="service-block ser-4">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-2.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Personal<br class="d-lg-block d-none">
-                                        Documents
+                                <a href="mala-langu.html">
+                                    <div class="service-block ser-4"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-2.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Malay
+                                            <br class="d-lg-block d-none">Language
 
+
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-4 ">
-                                <div class="service-block ser-7">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-3.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Medical<br class="d-lg-block d-none">
-                                        Documents
+                                <a href="indonesian-lang.html">
+                                    <div class="service-block ser-7"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-3.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Indonesian<br class="d-lg-block d-none">
 
+                                            Language
+
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-4">
 
-                                <div class="service-block ser-2">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-4.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Malay <br class="d-lg-block d-none">
-                                        Language
-                                    </div>
+                                <div class="service-block ser-2"data-aos="flip-left">
+                                    <a href="it-and-tech.html">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-4.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Personal <br class="d-lg-block d-none">
+                                            Documents
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-4 ">
-                                <div class="service-block ser-5">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-5.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Business<br class="d-lg-block d-none">
+                                <a href="business-translation.html">
+                                    <div class="service-block ser-5"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-5.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Business<br class="d-lg-block d-none">
 
-                                        Documents
+                                            Documents
 
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-4 ">
-                                <div class="service-block ser-8">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-6.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Legal<br class="d-lg-block d-none">
-                                        Documents
+                                <a href="transcription.html">
+                                    <div class="service-block ser-8"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-6.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Transcription <br class="d-lg-block d-none">
+                                            Services
 
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-4">
-
-                                <div class="service-block ser-3">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-7.png" alt="">
+                                <a href="medical-translations.html">
+                                    <div class="service-block ser-3"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-7.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Medical<br class="d-lg-block d-none">
+                                            Documents
+                                        </div>
                                     </div>
-                                    <div class="explore-text ">
-                                        Indonesian<br class="d-lg-block d-none">
-                                        Language
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                             <div class="col-4 ">
-                                <div class="service-block ser-6">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-8.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        Transcription<br class="d-lg-block d-none">
-                                        Services
+                                <a href="legal-translation.html">
+                                    <div class="service-block ser-6"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-8.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            Legal<br class="d-lg-block d-none">
+                                            Documents
 
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
+
                             <div class="col-4 ">
-                                <div class="service-block ser-9">
-                                    <div class="blu-c">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage-9.png" alt="">
-                                    </div>
-                                    <div class="explore-text ">
-                                        IT &<br class="d-lg-block d-none">
-                                        Technical
+                                <a href="it-and-tech.html">
+                                    <div class="service-block ser-9"data-aos="flip-left">
+                                        <div class="blu-c">
+                                            <img class="img-fluid explore-icons" src="assets/images/bage-9.png" alt="">
+                                        </div>
+                                        <div class="explore-text ">
+                                            IT &<br class="d-lg-block d-none">
+                                            Technical
 
+                                        </div>
                                     </div>
-                                </div>
-
+                                </a>
                             </div>
+
                         </div>
 
                     </div>
@@ -883,22 +902,18 @@
 
         </section>
 
-
-
-
-       
-        <section class="Reviews mt-lg-5 mt-5 pb-lg-5">
+        <section class=" ">
             <div class="container">
-                <div class="cn-sec text-center pt-lg-5  pb-lg-5 ">
+                <div class="cn-sec text-center ">
                     <div class="latter-craft">
                         OUR TRACK RECORD <span>HIGHLIGHTS OUR EXPERTISE <span>
                     </div>
                 </div>
                 <div class="col-lg-9 mx-auto ">
-                    <div class="row gy-5">
+                    <div class="row gy-5 px-lg-0 px-3 pt-3">
                         <div class="col-lg-3   col-6 d-prper">
                             <div class="rew pt-3">
-                                <img class="img-fluid rew-im" src="assets/images/rew-1.png" alt="">
+                                <img class="img-fluid rew-im" src="assets/images/rew-1.png" alt=""data-aos="zoom-in"  >
                             </div>
                             <div class="rew-text">
                                 <div class="rew-count">
@@ -910,7 +925,7 @@
                         </div>
                         <div class="col-lg-3  col-6  d-prper">
                             <div class="rew pt-3">
-                                <img class="img-fluid rew-im" src="assets/images/rew-2.png" alt="">
+                                <img class="img-fluid rew-im" src="assets/images/rew-2.png" alt=""data-aos="zoom-in"  >
                             </div>
                             <div class="rew-text">
                                 <div class="rew-count">
@@ -923,7 +938,7 @@
                         </div>
                         <div class="col-lg-3 col-6  d-prper">
                             <div class="rew pt-3">
-                                <img class="img-fluid rew-im" src="assets/images/rew-3.png" alt="">
+                                <img class="img-fluid rew-im" src="assets/images/rew-3.png" alt=""data-aos="zoom-in"   >
                             </div>
                             <div class="rew-text">
                                 <div class="rew-count">
@@ -936,7 +951,7 @@
 
                         <div class="col-lg-3 col-6  d-prper">
                             <div class="rew pt-3">
-                                <img class="img-fluid  rew-im" src="assets/images/rew-4.png" alt="">
+                                <img class="img-fluid  rew-im" src="assets/images/rew-4.png" alt=""data-aos="zoom-in"   >
                             </div>
                             <div class="rew-text">
                                 <div class="rew-count">
@@ -949,13 +964,13 @@
 
                     </div>
                 </div>
-                <div class="google-rew pt-2 pb-5">
-                    <img class="img-fluid mt-lg-5 mt-5 text-center gool-re-img" src="assets/images/google-review.png"
+                <div class="google-rew pt-2 ">
+                    <img class="img-fluid mt-lg-5 mt-3 text-center gool-re-img" src="assets/images/google-review.png"
                         alt="">
                 </div>
-                <div class="owl-carousel owl-theme review-slider pb-5">
+                <div class="owl-carousel owl-theme review-slider pb-3">
                     <div class="item   px-3 px-lg-0">
-                        <div class="card review-card">
+                        <div class="card review-card" data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -978,7 +993,7 @@
                         </div>
                     </div>
                     <div class="item   px-3 px-lg-0">
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1004,7 +1019,7 @@
                         </div>
                     </div>
                     <div class="item   px-3 px-lg-0">
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1032,7 +1047,7 @@
                         </div>
                     </div>
                     <div class="item   px-3 px-lg-0">
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1062,7 +1077,7 @@
                     </div>
                     <div class="item   px-3 px-lg-0">
 
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1088,7 +1103,7 @@
                     </div>
                     <div class="item   px-3 px-lg-0">
 
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1115,7 +1130,7 @@
 
                     <div class="item   px-3 px-lg-0">
 
-                        <div class="card review-card">
+                        <div class="card review-card"data-aos="flip-right">
                             <div class="card-body text-center my-card">
                                 <div class="imges-card pt-2 pb-2">
                                     <img class="img-fluid per" src="assets/images/Basic_Ui__28186_29.jpg.png" alt="">
@@ -1139,7 +1154,7 @@
                         </div>
 
                     </div>
-                    <div class="item   px-3 px-lg-0">
+                    <div class="item   px-3 px-lg-0"data-aos="flip-right">
 
                         <div class="card review-card">
                             <div class="card-body text-center my-card">
@@ -1170,16 +1185,17 @@
                 </div>
             </div>
         </section>
-        <section class="brands-bg-c  pb-3 mt-lg-0 ">
+        <section class="brands-bg-c">
             <div class="container ">
-                <div class="cn-sec text-center pt-lg-5 pt-4">
-                    <div class="latter-craft">
+                <div class="cn-sec text-center">
+                    <div class="latter-craft
+                     pt-4">
                         BRANDS THAT <span>TRUST US <span>
                     </div>
                 </div>
             </div>
-            <div class="container-lg">
-                <div class="owl-carousel  owl-theme brands mt-lg-5 ">
+            <div class="container-lg px-0 px-lg-3 pt-lg-3 pb-lg-3">
+                <div class="owl-carousel  owl-theme brands ">
                     <div class="item"><img class="img-fluid  brnd-img " src="assets/images/phi.png" alt="">
                     </div>
                     <div class="item"><img class="img-fluid brnd-img" src="assets/images/ubisoft.png" alt="">
@@ -1208,9 +1224,9 @@
 
                 </div>
             </div>
-            </div>
-            </div>
+
         </section>
+
 
 
     </main>
@@ -1228,8 +1244,6 @@
     <script>
 
         includeHTML();
-
-
 
 
 
@@ -1288,16 +1302,14 @@
 
                 },
                 576: {
-                    items: 1.3,
+                    items: 1,
 
                 },
-                991: {
+                992: {
                     items: 3,
 
                 }
             }
-
-
 
 
         });
@@ -1338,11 +1350,10 @@
 
         });
 
-
         $('.review-slider').owlCarousel({
             nav: false,
             items: 4,
-            loop: false,
+            loop: true,
             margin: 30,
             autoplay: true,
             autoplayTimeout: 2000,
@@ -1352,7 +1363,7 @@
 
                 },
                 576: {
-                    items: 1,
+                    items: 2,
 
                 },
                 992: {
@@ -1364,5 +1375,3 @@
 
     </script>
 </body>
-
-</html>
