@@ -550,10 +550,12 @@ main {
     font-style: normal;
 
     line-height: 1.5;
+    width: 82%;
 
 }
 
 .p-span {
+    margin-top:2%;
     color: #0089CF;
 }
 
@@ -839,13 +841,13 @@ section {
 }
 
 .latter-craft {
+    padding-top: 3%;
     color: #000;
     font-family: 'dm-bold';
-    padding-top: 3%;
-    /* font-size: calc(2vw + 10px); */
-    font-size: clamp(20px, calc(2vw + 10px), 48px);
+    font-size: clamp(20px, calc(2vw + 1px), 47px);
     font-style: normal;
-
+    font-weight: 700;
+    line-height: normal;
     line-height: 1.2;
     text-transform: uppercase;
 }
@@ -1069,16 +1071,20 @@ section {
 
 .price-text span {
     color: #000;
-    font-family: "dm-regular";
+    font-family: "dm-medium";
     font-size: clamp(16px, calc(0.79vw + 9px), 24px);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.5;
     /* 216% */
 
 }
 
-
+.sampl-car .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .google-rew {
     display: flex;
@@ -1108,9 +1114,8 @@ section {
     /* or 250% */
 
     display: flex;
-    align-items: center;
-    text-align: center;
-
+    align-items:start;
+   
     color: #000000;
 }
 
