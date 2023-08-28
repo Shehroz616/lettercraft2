@@ -553,6 +553,18 @@ main {
     width: 82%;
 
 }
+.paragraph-21 {
+
+    padding-top: 1%;
+    color: #3C3B3B;
+    font-family: 'dm-regular';
+    font-size: clamp(14px, calc(0.79vw + 9px), 28px);
+    font-style: normal;
+
+    line-height: 1.5;
+  
+
+}
 
 .p-span {
     margin-top:2%;
@@ -931,7 +943,7 @@ section {
 .latter-craft-s span {
     color: #0089CF;
     font-family: 'dm-bold';
-    font-size: clamp(16px, calc(1.7vw + 2px), 15px);
+    font-size: clamp(16px, calc(1.7vw + 2px), 24px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -2070,13 +2082,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .my-tra-3 {
-        TOP: 77%;
+        TOP: 84%;
         display: flex;
         position: absolute;
         right: 80px;
         z-index: 1;
     }
-
 
 
 
