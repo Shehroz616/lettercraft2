@@ -2317,6 +2317,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .paragraph-2 {
+      
+        width: 100%;
+    }
   
    
 
