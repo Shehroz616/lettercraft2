@@ -126,7 +126,7 @@ main {
 }
 
 .blue-box span {
-    font-size: clamp(14px, calc(1vw + 1px), 20px);
+    font-size: clamp(10px, calc(1vw + 1px), 20px);
 }
 
 .gool-re-img {
@@ -2329,6 +2329,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .mbo-n{
+        display: none;
+    }
     .paragraph-2 {
       
         width: 100%;
