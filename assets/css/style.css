@@ -107,6 +107,9 @@ main {
     color: #000000;
 }
 
+.silder-text.owl-theme .owl-nav.disabled+.owl-dots {
+    display: none;
+}
 .blue-box {
     background-color: #0089CF;
     border-radius: 24px;
@@ -123,7 +126,7 @@ main {
 }
 
 .blue-box span {
-    font-size: clamp(15px, calc(1vw + 1px), 20px);
+    font-size: clamp(14px, calc(1vw + 1px), 20px);
 }
 
 .gool-re-img {
@@ -2766,9 +2769,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         display: none;
     }
 
-    .silder-text.owl-theme .owl-nav.disabled+.owl-dots {
-        margin-top: -15px !important;
-    }
+   
 
     main {
         padding-top: 61px;
