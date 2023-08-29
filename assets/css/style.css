@@ -123,7 +123,7 @@ main {
 }
 
 .blue-box span {
-    font-size: clamp(7px, calc(1vw + 1px), 20px);
+    font-size: clamp(15px, calc(1vw + 1px), 20px);
 }
 
 .gool-re-img {
@@ -207,7 +207,10 @@ main {
     border: 1.5px solid #0089CF;
 
 }
-
+.navbar-expand-xl .navbar-nav {
+   
+    justify-content: center !important;
+}
 .ica-link {
     color: #0089CF;
     text-decoration: underline;
@@ -345,6 +348,9 @@ main {
 .my-trans-row {
     padding-top: 6%;
 
+}
+.my-sec-h{
+    height: 226px;
 }
 
 .paragraph-f span {
@@ -524,7 +530,7 @@ main {
 
 .paragraph {
     margin: auto;
-    padding-top: 1%;
+    padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
     /* font-size: calc(0.79vw + 9px); */
@@ -547,7 +553,7 @@ main {
 
 .paragraph-2 {
 
-    padding-top: 1%;
+    padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
     font-size: clamp(14px, calc(0.79vw + 9px), 28px);
@@ -560,7 +566,7 @@ main {
 
 .paragraph-21 {
 
-    padding-top: 1%;
+    padding-top: 1.5% !important;;
     color: #3C3B3B;
     font-family: 'dm-regular';
     font-size: clamp(14px, calc(0.79vw + 9px), 28px);
@@ -584,7 +590,7 @@ main {
 
 .paragraph-pri {
     color: #3C3B3B;
-
+    padding-top: 1.5% !important;
     font-family: 'dm-regular';
     font-size: clamp(12px, calc(1.5vw + 1px), 24px);
     font-style: normal;
@@ -610,7 +616,7 @@ main {
 }
 
 .paragraph-dot {
-    margin-top: 1%;
+    padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
     font-size: clamp(12px, calc(1.5vw + 1px), 24px);
@@ -622,6 +628,7 @@ main {
 
 
 .paragraph-f {
+    padding-top: 1.5% !important;
     color: #959595;
     font-size: clamp(14px, calc(0.70vw + 9px), 16px);
     font-family: 'lato-regular';
@@ -907,6 +914,7 @@ section {
 }
 
 .paragraphhh {
+    padding-top: 1.5% !important;
     margin: auto;
     color: #3C3B3B;
     font-family: 'dm-regular';
@@ -1138,6 +1146,7 @@ section {
 
 
 .paragrap {
+    
     font-family: 'dm-medium';
     font-style: normal;
     font-weight: 400;
@@ -1324,7 +1333,7 @@ section {
 .navbar-expand-xl .navbar-nav .nav-link {
 
     padding: 8px 12px;
-    font-size: clamp(12px, calc(1vw + 2px), 24px);
+    font-size: clamp(16px, calc(1vw + 2px), 24px);
     font-family: "dm-medium";
 
 }
@@ -2336,8 +2345,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .navbar-toggler-icon {
-        width: 1rem;
-        height: 1rem;
+        width: 2rem;
+        height: 2rem;
     }
 
     .navbar-toggler {
