@@ -2329,6 +2329,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .font-siz {
+        font-size: 14px !important;
+        position: relative;
+        top: -4px;
+        left: 1px;
+    }
     .mbo-n{
         display: none;
     }
