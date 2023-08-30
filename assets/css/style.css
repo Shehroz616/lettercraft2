@@ -2137,7 +2137,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 
     .logo {
-        width: 130px !important;
+        width: 100px !important;
     }
 
     .navbar-expand-xl .navbar-nav .nav-link {
@@ -2502,7 +2502,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .logo {
-        width: 120px;
+        width: 100px;
     }
 
     .my-nav {
@@ -2773,9 +2773,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     }
 
-    .logo {
-        width: 105px !important;
-    }
+   
 
     .navbar-toggler {
 
