@@ -100,9 +100,9 @@ main {
 .rew-im-2 {
     width: 40px;
 }
-.nv-tab-pic{
-   height: 40px;
-   width: 30px;
+.nv-tab-pic {
+    height: 50px;
+    width: 45px;
 }
 
 .navbar-nav .nav-item:hover {
@@ -328,7 +328,7 @@ main {
 .owl-carousel .owl-stage-outer {
 
     padding: 15px 0;
- padding-top: 0px;
+
 
 }
 
@@ -1460,6 +1460,16 @@ section {
     z-index: -1;
 }
 
+.qoute-sec {
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    background-color: rgba(1, 137, 207, 0.05);
+    top: 0px;
+    left: 0;
+    z-index: -1;
+}
+
 #form-sec {
     position: relative;
 }
@@ -1633,6 +1643,9 @@ section {
 }
 
 
+.owl-item text{
+    color:#3C3B3B;
+}
 
 .accordion-body {
     color: #6F6C90;
@@ -1643,6 +1656,12 @@ section {
     line-height: 1.5;
 
 }
+.accordion-body span a {
+    color:#0089CF !important;
+    
+
+}
+
 
 
 .accordion-item {
@@ -2144,11 +2163,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     }
 
-    .owl-carousel.brands .owl-nav button.owl-prev {
-        top: 5% !important;
 
-
-    }
 }
 
 @media(max-width: 1200px) {
@@ -2347,7 +2362,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         justify-content: center;
     }
     .owl-theme.silder-text .owl-nav.disabled+.owl-dots {
-        margin-top: -31px;
+        margin-top: -21px;
     }
     .nv-tab-pic {
         height: 50px;
@@ -2872,7 +2887,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .service-block img {
-        width: 23px;
+        width: 35px;
     }
 
 
