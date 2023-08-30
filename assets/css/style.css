@@ -1344,7 +1344,7 @@ section {
 
 .navbar-expand-xl .navbar-nav .nav-link i::before {
     position: relative;
-    top: 3px;
+    top: 2px;
 }
 
 .nav.nav-tabs .nav-link {
