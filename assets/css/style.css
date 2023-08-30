@@ -37,7 +37,10 @@
 
 
 }
-
+.best-img
+{
+    padding:18px;
+}
 .font-siz {
 
     font-size: 10px !important;
