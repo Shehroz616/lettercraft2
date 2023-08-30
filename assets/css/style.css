@@ -540,7 +540,7 @@ main {
     color: #3C3B3B;
     font-family: 'dm-regular';
     /* font-size: calc(0.79vw + 9px); */
-    font-size: clamp(14px, calc(0.79vw + 9px), 24px);
+    font-size: clamp(16px, calc(0.79vw + 9px), 24px);
     font-style: normal;
 
     line-height: 1.5;
@@ -562,7 +562,7 @@ main {
     padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
-    font-size: clamp(14px, calc(0.79vw + 9px), 28px);
+    font-size: clamp(16px, calc(0.79vw + 9px), 28px);
     font-style: normal;
 
     line-height: 1.5;
@@ -618,14 +618,14 @@ main {
 .detail-sec li {
     color: #697587;
     /* font-size: calc(0.5vw + 7px); */
-    font-size: clamp(12px, calc(0.5vw + 7px), 16px);
+    font-size: clamp(14px, calc(0.5vw + 7px), 16px);
 }
 
 .paragraph-dot {
     padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
-    font-size: clamp(12px, calc(1.5vw + 1px), 24px);
+    font-size: clamp(16px, calc(1.5vw + 1px), 24px);
     font-style: normal;
     font-weight: 400;
     line-height: 1.2;
@@ -636,7 +636,7 @@ main {
 .paragraph-f {
     padding-top: 1.5% !important;
     color: #959595;
-    font-size: clamp(14px, calc(0.70vw + 9px), 16px);
+    font-size: clamp(16px, calc(0.70vw + 9px), 16px);
     font-family: 'lato-regular';
     font-style: normal;
     font-weight: 400;
@@ -1052,7 +1052,7 @@ section {
     font-family: 'Lato-regular';
     font-style: normal;
 
-    font-size: clamp(12px, calc(0.8vw + 1px), 16px);
+    font-size: clamp(14px, calc(0.8vw + 1px), 16px);
     line-height: 1.2;
     color: #7A7A7A;
 
@@ -1631,7 +1631,7 @@ section {
 .accordion-body {
     color: #6F6C90;
     font-family: 'dm-regular';
-    font-size: clamp(12px, calc(0.7vw + 1px), 16px);
+    font-size: clamp(14px, calc(0.7vw + 1px), 16px);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
