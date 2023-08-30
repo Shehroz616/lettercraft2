@@ -1358,7 +1358,8 @@ section {
 }
 
 .my-tab-c .nav-link.active {
-
+    font-weight: 500;
+    font-family: 'dm-regular';
     color: #0089CF;
 
 }
