@@ -39,7 +39,7 @@
 }
 
 .best-img {
-    padding: 18px;
+    padding: 10px;
 }
 
 .font-siz {
@@ -53,8 +53,8 @@ main {
     padding-top: 104px;
 }
 
-.owl-theme .owl-nav.disabled+.owl-dots {
-    /* margin-top: 25px; */
+.owl-theme .slider-text .owl-nav.disabled+.owl-dots {
+    margin-top: -22px;
 }
 
 .navbar {
@@ -102,8 +102,8 @@ main {
 }
 
 .nv-tab-pic {
-    height: 50px;
-    width: 45px;
+   
+    width: 50px;
 }
 
 .navbar-nav .nav-item:hover {
@@ -242,15 +242,41 @@ main {
 
 }
 
+.mybtn2:hover i{
+    color: #000000 !important;
+}
+.sample-card-title1{
+    font-family: 'dm-medium';
+    font-size: clamp(16px, calc(1.2vw + 1px), 24px);
+    padding: 24px;
+    color: #000000;
+    padding: 0;
+    cursor: pointer;
 
+}
+.sample-card-title1 span{
+    font-family: 'dm-medium';
+    font-size: clamp(16px, calc(1.2vw + 1px), 24px);
+    padding: 24px;
+    color: #0089CF;
+    padding: 0;
+    cursor: pointer;
+
+}
 .mybtn2 {
     font-family: 'dm-medium';
-
-
-    font-size: clamp(12px, calc(1.2vw + 1px), 24px);
+    font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     padding: 24px;
-    line-height: 11px;
     color: #0089CF;
+    padding: 0;
+    cursor: pointer;
+
+}
+.mybtn2:hover {
+    font-family: 'dm-medium';
+    font-size: clamp(16px, calc(1.2vw + 1px), 24px);
+    padding: 24px;
+    color:#000000;
     padding: 0;
     cursor: pointer;
 
@@ -367,11 +393,11 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 1.8;
-    
+
     color: #3C3B3B;
     font-size: clamp(14px, calc(1vw + 9px), 30px);
 
-   
+
 }
 
 .paragraph-f span {
@@ -555,7 +581,7 @@ main {
     color: #3C3B3B;
     font-family: 'dm-regular';
     /* font-size: calc(0.79vw + 9px); */
-    font-size: clamp(16px, calc(0.79vw + 9px), 24px);
+    font-size: clamp(14px, calc(0.79vw + 9px), 28px);
     font-style: normal;
 
     line-height: 1.5;
@@ -566,7 +592,7 @@ main {
     color: #3C3B3B;
     font-family: 'dm-bold';
     /* font-size: calc(0.79vw + 9px); */
-    font-size: clamp(16px, calc(0.79vw + 9px), 24px);
+    font-size: clamp(14px, calc(0.79vw + 9px), 28px);
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -577,7 +603,7 @@ main {
     padding-top: 1.5% !important;
     color: #3C3B3B;
     font-family: 'dm-regular';
-    font-size: clamp(16px, calc(0.79vw + 9px), 28px);
+    font-size: clamp(14px, calc(0.79vw + 9px), 28px);
     font-style: normal;
 
     line-height: 1.5;
@@ -672,16 +698,7 @@ main {
 }
 
 
-.mybtn2:hover {
-    font-family: 'dm-medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: clamp(12px, calc(1.2vw + 1px), 24px);
-    line-height: 21px;
-    color: #0089CF;
-    padding: 0;
 
-}
 
 
 .brnd-img {
@@ -1025,7 +1042,7 @@ section {
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     line-height: 1.5;
     color: #0189CF;
-
+    padding-top: 2%;
 }
 
 .samm-text span {
@@ -1176,7 +1193,15 @@ section {
 
     color: #3C3B3B;
 }
+.paragrap-t {
+   
+    font-family: 'dm-medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, calc(1.2vw + 1px), 28px);
 
+    color: #3C3B3B;
+}
 .paragrap-dash {
     font-family: 'dm-medium';
     font-style: normal;
@@ -2381,18 +2406,25 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    #nav-tabContent {
+      border: none;
+        background: #FFF;
+       margin-bottom: 5%;
+    }
+
     .my-sec-h {
 
         font-family: "dm-regular";
         font-style: normal;
         font-weight: 400;
         line-height: 1.8;
-        
+
         color: #3C3B3B;
         font-size: clamp(14px, calc(1vw + 9px), 30px);
-    
+
         height: 226px;
     }
+
     .google-rew {
         margin-bottom: 3%;
         margin-top: 5%;
@@ -2566,7 +2598,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     .el-button {
         position: absolute !important;
-        margin-top: 32% !important;
+        margin-top: 28% !important;
         margin-left: 6% !important;
         border-radius: 24px !important;
         color: white !important;
@@ -2616,13 +2648,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         padding: 5%;
         box-shadow: -0.5px -0.5px 10px 0px #0000001a;
     }
-
     .pos-r span {
         background-color: white;
-        top: 50%;
+        top: 54%;
         transform: translate(-51%, 174%);
-        left: 50%;
-        width: 74px;
+        left: 45%;
+        width: 17px;
     }
 
     .border-left {
@@ -2639,8 +2670,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .payment-content {
-        width: 77%;
-        margin-left: auto;
+        width: 100%;
+
     }
 
     .payment-tab {
@@ -2894,8 +2925,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     .el-button {
         position: absolute !important;
-        margin-top: 53% !important;
-        margin-left: -30% !important;
+        margin-top: 33% !important;
+        margin-right: -0% !important;
 
 
     }
@@ -2912,6 +2943,11 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:576px) {
+    .el-button {
+        position: absolute !important;
+        margin-top: 35% !important;
+        margin-left: -40% !important;
+    }
     .about-right-img-2 {
 
         width: 68%;
@@ -2934,13 +2970,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
 
-
     .el-button {
-        position: absolute;
-        margin-top: 30%;
-        margin-left: 20%;
-        font-size: 12px;
-
+        position: absolute !important;
+        margin-top: 49% !important;
+        margin-left: -76% !important;
     }
 
     .strip-visa-imges {
@@ -3060,6 +3093,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .explore-icons {
         width: 60%;
     }
+    
 
 
 }

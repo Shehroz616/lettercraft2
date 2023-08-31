@@ -292,7 +292,7 @@
                             <div class="col-4 ">
                                 <a href="chinese-lang.html">
                                     <div class="service-block ser-1 "data-aos="flip-left">
-                                        <img class="img-fluid explore-icons" src="assets/images/bage.png" alt="">
+                                        <img class="img-fluid explore-icons" src="assets/images/bage-21.png" alt="">
 
                                         <div class="explore-text">
                                             <a href="chinese-lang.html"> Chinese<br class="d-lg-block d-none">
@@ -441,7 +441,7 @@
                             <div class="col-4 ">
 
                                 <div class="service-block ser-1 ">
-                                    <img class="img-fluid explore-icons" src="assets/images/bage.png" alt="">
+                                    <img class="img-fluid explore-icons" src="assets/images/bage-21.png" alt="">
 
                                     <div class="explore-text">
                                         <a href="chinese-lang.html"> Chinese<br class="d-lg-block d-none">
@@ -2007,6 +2007,7 @@
                 </div>
             </div>
         </section>
+       
     </main>
     <footer w3-include-html="footer.html">
 
@@ -2065,6 +2066,27 @@
 
         });
         $('.my-tabs-cr').owlCarousel({
+            nav: false,
+            dots: false,
+            items: 5,
+            // margin: 0,
+            responsive: {
+                0: {
+                    // center: true,
+                    merge: true,
+                    items: 2.2,
+
+                },
+                576: {
+                    items: 3,
+                    merge: true,
+                },
+
+            }
+
+
+        });
+        $('.my-tabs-cr2').owlCarousel({
             nav: false,
             dots: false,
             items: 5,
