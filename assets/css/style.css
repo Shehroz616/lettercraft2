@@ -196,7 +196,7 @@ main {
 }
 
 .my-drop-3 {
-    width: 770px !important;
+    width: 770px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
