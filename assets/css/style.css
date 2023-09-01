@@ -32,6 +32,7 @@
     color: #000000;
 }
 .get-a-qoute-btn{
+    z-index: 5;
     font-family: 'dm-bold';
     font-style: normal;
     transition:all .3s ;
