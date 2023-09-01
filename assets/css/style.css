@@ -2259,6 +2259,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1200px) {
+    .qoute-sec{
+        height: 60%;
+    }
 
 
     .detail-sec {
