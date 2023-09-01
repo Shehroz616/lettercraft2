@@ -506,6 +506,7 @@ main {
     left: 50%;
     background-color: white;
     width: 5%;
+    position: absolute;
 
 }
 
@@ -2075,7 +2076,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 .my-tabs-cr2 .nav-item {
     display: flex;
-    justify-content: center;
+    justify-content: start;
 
 }
 
@@ -2444,6 +2445,14 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .pos-r span {
+        top: 74%;
+        left: 46%;
+    }
+    .my-pay-tabs {
+        display: flex;
+        flex-direction: column;
+    }
     #nav-tabContent {
       border: none;
         background: #FFF;
@@ -2683,16 +2692,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .img-scan {
         width: 40%;
         border-radius: 12%;
-        padding: 5%;
-        box-shadow: -0.5px -0.5px 10px 0px #0000001a;
+        padding: 2%;
+        
     }
-    .pos-r span {
-        background-color: white;
-        top: 54%;
-        transform: translate(-51%, 174%);
-        left: 45%;
-        width: 17px;
-    }
+  
 
     .border-left {
         border: none !important;
@@ -2866,6 +2869,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:767px) {
+    .pos-r span {
+        top: 70%;
+        left: 40%;
+    }
     .ab-tag-img {
         display: flex;
         flex-direction: column;
