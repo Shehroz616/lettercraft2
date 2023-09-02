@@ -35,6 +35,10 @@
     display: none;
     
 }
+.rc-anchor-normal {
+    width:95%;
+}
+
 
 .get-a-qoute-btn {
     z-index: 5;
