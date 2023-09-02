@@ -31,13 +31,18 @@
 .accordion-button:not(.collapsed) {
     color: #000000;
 }
+#loom-companion-mv3{
+    display: none;
+    
+}
+
 .get-a-qoute-btn {
     z-index: 5;
     font-family: 'dm-bold';
     font-style: normal;
     transition: all .3s;
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
-    padding: 11px 25px;
+    padding: 4px 12px;
     color: #000000;
     background: white;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -45,9 +50,10 @@
     cursor: pointer;
     position: fixed;
     top: 40%;
-    right: 35px !important;
+    right: 50px !important;
     transform-origin:center right;
     rotate: -91deg;
+    border: 2px solid #0089CF;
 }
 .get-a-qoute-btn:hover{
     transform: scale(1.05);
@@ -2439,6 +2445,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .get-a-qoute-btn {
+        
+        right: 22px !important;
+    }
     .rew-count {
         width: 70px;
     }
