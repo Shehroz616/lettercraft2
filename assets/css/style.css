@@ -1037,20 +1037,6 @@ section {
     color: #0189CF;
 }
 
-.rew-count {
-    font-family: 'dm-regular';
-    font-style: normal;
-    font-weight: 700;
-    font-size: clamp(20px, calc(2.5vw + 1px), 48px);
-    line-height: 1.5;
-    /* or 117% */
-
-    display: flex;
-    align-items: center;
-
-    color: #0189CF;
-
-}
 
 .review-card {
     background: #FFFFFF;
@@ -1793,9 +1779,9 @@ section {
 .cntct-inf {
     display: flex;
     color: #000;
-    font-size: clamp(16px, calc(1vw + 1px), 20px);
+    font-size: clamp(13px, calc(1vw + 1px), 20px);
     font-family: 'Lato-bold';
-    font-weight: 400;
+    
     justify-content: left;
     align-items: center;
 }
@@ -2453,6 +2439,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .rew-count {
+        width: 70px;
+    }
     
     .mob-img-z{
         width: 15%;
@@ -2903,10 +2892,6 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
     .paragraph-dot {
         margin-bottom: 4.5%;
-    }
-
-    .rew-count {
-        width: 50px;
     }
 
     section {
