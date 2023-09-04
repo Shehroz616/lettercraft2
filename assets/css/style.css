@@ -215,14 +215,16 @@ main {
 }
 
 .my-drop {
-    width: 654px;
+    max-width: 654px;
+    width:100%;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .my-drop2 {
-    width: 320px;
+    width:100%;
+    max-width: 320px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
@@ -239,7 +241,8 @@ main {
 }
 
 .my-drop-3 {
-    width: 770px;
+    width: 100%;
+    max-width: 770px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
@@ -2350,6 +2353,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .my-drop2 {
+        max-width: 654px;
+        width:100%;
       
         border-radius: 0;
         background: #FFF;
@@ -2358,6 +2363,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .my-drop {
+        max-width: 320px;
+        width:100%;
        
         border-radius: 0;
         background: #FFF;
@@ -2366,7 +2373,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .my-drop-3 {
-       
+        max-width:770px;
+    width:100%;
         border-radius: 0;
         background: #FFF;
         box-shadow: none;
@@ -2525,6 +2533,17 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .scrl{
+    
+   
+ 
+        max-height: auto;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+       
+       
+    }
     .g-recaptcha{
         transform: scale(0.9);
     }
