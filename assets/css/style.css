@@ -186,9 +186,27 @@ main {
     padding: 18px;
 
 }
+.blue-box1 {
+    background-color: #0089CF;
+    border-radius: 24px;
+    color: #FFFFFF;
+    width: fit-content;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: "Lato-regular";
+    font-weight: 400;
+    line-height: 1;
+    padding: 18px;
+    width:200px;
+
+}
 
 .blue-box span {
     font-size: clamp(14px, calc(1vw + 1px), 20px);
+}
+.blue-box1 span {
+    font-size: clamp(16px, calc(1vw + 1px), 20px);
 }
 
 .gool-re-img {
@@ -614,12 +632,13 @@ main {
     height: 100%;
 }
 
-.contact-info {
 
+.contact-info1{
+    display: flex;
     justify-content: center;
     align-items: center;
-}
 
+}
 .card-h {
     position: relative;
 }
@@ -2287,6 +2306,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         border-radius: 16px;
         padding: 14px;
     }
+    .blue-box1 {
+        border-radius: 16px;
+        padding: 14px;
+    }
 
     main {
         padding-top: 92px;
@@ -2320,6 +2343,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
     .blue-box {
+        padding: 13px;
+    }
+    .blue-box1 {
         padding: 13px;
     }
 
@@ -2984,6 +3010,10 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         border-radius: 10px !important;
 
     }
+    .blue-box1 {
+        border-radius: 10px !important;
+
+    }
 
     .gool-re-img {
         width: 135px;
@@ -3038,7 +3068,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .blue-box {
         padding: 8px;
     }
-
+    .blue-box1 {
+        padding: 8px;
+    }
     .auto-width {
         width: 100%;
     }
