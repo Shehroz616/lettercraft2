@@ -210,7 +210,7 @@
                                             Starting from:&nbsp;<span>S$215.00 </span>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -219,7 +219,7 @@
                                 <div class="card-body text-center ">
                                     <img class="img-fluid  w-100" src="assets/images/img-sample-2.png" alt="">
 
-                                    
+
                                     <div>
 
 
@@ -411,7 +411,7 @@
                                         public in Singapore or the issuing country. For full guidelines, you may please
                                         refer to page 2 of <span class="acc-b"> <a target="_blank"
                                                 href="https://www.ica.gov.sg/docs/default-source/ica/eservices/epr/explanatory_notes_and_document_list_for_spouse_of_sc_pr.pdf?sfvrsn=9b8008ed_24">the
-                                            document provided by ICA.</span></a>
+                                                document provided by ICA.</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -540,10 +540,10 @@
                 <div class="row">
                     <div class="col-lg-5 ">
                         <div class=" text-center pt-lg-5 mt-lg-3">
-                            <img class="img-fluid w-100 d-lg-none d-block " src="assets/images/A.png" alt="">
+                            <img class="img-fluid w-100 d-lg-none d-block " src="assets/images/LEETERQ.png" alt="why-letter-craft">
                             <video class="d-lg-block d-none video-widd" width="100%" autoplay loop muted>
 
-                                <source src="assets/video/stnd-q-2.mp4" type="video/mp4">
+                                <source src="assets/video/question-mark.mp4" type="video/mp4">
 
                             </video>
                         </div>
@@ -554,43 +554,48 @@
                     <div class=" col-lg-6 ps-lg-5 pe-lg-0 ms-auto ">
                         <div class=" text-center  px-2  ">
                             <div class="paragrap-t pt-3 text-start mt-lg-5  px-lg-0 px-3">
-                                <div class="paragraph-bold mb-1">For business in Singapore or expanding your market, we offer
-                                    translation services for a variety of business documents. From company profiles to marketing
+                                <div class="paragraph-bold mb-1">For business in Singapore or expanding your market, we
+                                    offer
+                                    translation services for a variety of business documents. From company profiles to
+                                    marketing
                                     materials, website content, and ecommerce documents.
                                 </div>
                                 <div class="d-flex "><i class="fa-solid fa-check pe-3 pt-2" style="color: #0189cf;"></i>
-                                    <div> Our professional translators at Letter Crafts ensure high-quality translations. Trust us
+                                    <div> Our professional translators at Letter Crafts ensure high-quality
+                                        translations. Trust us
                                         with any business document you need to translate.
                                     </div>
-            
-                                   
+
+
                                 </div>
                                 <div class="d-flex "><i class="fa-solid fa-check pe-3 pt-2" style="color: #0189cf;"></i>
                                     <div> We value your business and understand the importance of accurate translations.
                                     </div>
                                 </div>
-            
+
                                 <div class="d-flex "><i class="fa-solid fa-check pe-3 pt-2" style="color: #0189cf;"></i>
-                                    <div> To ensure professional-grade translations, we only engage industry experts and native
+                                    <div> To ensure professional-grade translations, we only engage industry experts and
+                                        native
                                         translators.We help our clients with: </div>
                                 </div>
                                 <div class="ps-lg-4 PS-2">
-                                <ul>
-            
-                                    <li class=""><span>Business and E-commerce translations</span></li>
-                                    <li class=""><span>Banking, Legal and Contracts translations</span></li>
-                                    <li class=""><span>Websites, Apps and Product Description translations</span></li>
-                                    <li class=""><span>Advertising & Marketing translations and more...</span>
-                                    </li>
-            
-                                </ul>
+                                    <ul>
+
+                                        <li class=""><span>Business and E-commerce translations</span></li>
+                                        <li class=""><span>Banking, Legal and Contracts translations</span></li>
+                                        <li class=""><span>Websites, Apps and Product Description translations</span>
+                                        </li>
+                                        <li class=""><span>Advertising & Marketing translations and more...</span>
+                                        </li>
+
+                                    </ul>
                                 </div>
-        
-            
-            
+
+
+
                             </div>
-            
-            
+
+
                         </div>
                     </div>
                 </div>
@@ -1206,7 +1211,8 @@
                     <div class="item"><img class="img-fluid  brnd-img " src="assets/images/coca.png" alt="">
                     </div>
                     <a target="_blank" href="https://bestinsingapore.com/translation-services/">
-                        <div class="item img-link"><img class="img-fluid brnd-img best-img" src="assets/images/best.png" alt="">
+                        <div class="item img-link"><img class="img-fluid brnd-img best-img" src="assets/images/best.png"
+                                alt="">
                         </div>
                     </a>
                     <a target="_blank" href="https://www.bestinsingapore.co/best-translation-singapore/">
@@ -1241,7 +1247,27 @@
         crossorigin="anonymous"></script>
     <script>
 
+     
         includeHTML();
+
+        let boxs = document.querySelectorAll(".service-block")
+        let overlay = document.getElementById("overlay-sec")
+        boxs.forEach(box => {
+            box.addEventListener("mouseover", function () {
+                overlay.style.display = "block";
+                box.style.zIndex = "5"
+                box.style.transform = "scale(1.1)"
+            })
+        });
+
+
+        overlay.addEventListener("mouseover", function () {
+            overlay.style.display = "none";
+            boxs.forEach(box => {
+                box.style.zIndex = "1"
+                box.style.transform = "scale(1)"
+            });
+        })
 
         $('.item-slider-imges').owlCarousel({
             nav: false,
@@ -1372,14 +1398,14 @@
 
     </script>
     <!-- WhatsHelp.io widget -->
-<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-<script>
-  var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"+6590360319","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
-  window.onload = () => {
-    _waEmbed(wa_btnSetting);
-  };
-</script>
-<!-- /WhatsHelp.io widget -->
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "WhatsApp Us", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "+6590360319", "welcomeMessage": "Hello", "zIndex": 999999, "btnColorScheme": "light" };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting);
+        };
+    </script>
+    <!-- /WhatsHelp.io widget -->
 </body>
 
 </html>

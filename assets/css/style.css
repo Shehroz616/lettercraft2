@@ -56,7 +56,7 @@
     cursor: pointer;
     position: fixed;
     top: 40%;
-    right: 50px !important;
+    right: 27px !important;
     transform-origin: center right;
     rotate: -91deg;
     border: 2px solid #0089CF;
@@ -101,6 +101,7 @@ main {
 
 .owl-theme .slider-text .owl-nav.disabled+.owl-dots {
     margin-top: -22px;
+    padding-bottom:  30px !important;
 }
 
 .navbar {
@@ -345,7 +346,7 @@ main {
 .uen-text {
     color: #4B4B4B;
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(16px, calc(1.2vw + 13px), 36px);
     font-family: 'dm-regular';
     font-style: normal;
     font-weight: 400;
@@ -560,7 +561,7 @@ main {
 .scan-b {
     color: #000;
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(16px, calc(1.2vw + 13px), 30 px);
     font-family: 'dm-bold';
     font-style: normal;
     font-weight: 500;
@@ -2472,6 +2473,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .g-recaptcha{
+        transform: scale(0.9);
+    }
     .get-a-qoute-btn {
 
         right: 22px !important;
