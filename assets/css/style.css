@@ -215,16 +215,14 @@ main {
 }
 
 .my-drop {
-    max-width: 654px;
-    width:100%;
+   width: 654px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
 }
 
 .my-drop2 {
-    width:100%;
-    max-width: 320px;
+    width: 320px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
@@ -241,8 +239,7 @@ main {
 }
 
 .my-drop-3 {
-    width: 100%;
-    max-width: 770px;
+  width: 770px;
     border-radius: 8px;
     background: #FFF;
     box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
@@ -2352,34 +2349,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         padding: 13px;
     }
 
-    .my-drop2 {
-        max-width: 654px;
-        width:100%;
-      
-        border-radius: 0;
-        background: #FFF;
-        box-shadow: none;
-        border: none;
-    }
-
-    .my-drop {
-        max-width: 320px;
-        width:100%;
-       
-        border-radius: 0;
-        background: #FFF;
-        box-shadow: none;
-        border: none;
-    }
-
-    .my-drop-3 {
-        max-width:770px;
-    width:100%;
-        border-radius: 0;
-        background: #FFF;
-        box-shadow: none;
-        border: none;
-    }
+   
+   
 
     .navbar-nav .nav-link {
         display: flex;
@@ -2533,17 +2504,29 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
-    .scrl{
-    
-   
- 
-        max-height: auto;
-        overflow-x: hidden;
-        overflow-y: auto;
-        
-       
-       
+    /* .my-drop {
+        max-width: 654px;
+        width:100%;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
     }
+    
+    .my-drop2 {
+        width:100%;
+        max-width: 320px;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+    }
+    .my-drop-3 {
+        width: 100%;
+        max-width: 770px;
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+    } */
+   
     .g-recaptcha{
         transform: scale(0.9);
     }
