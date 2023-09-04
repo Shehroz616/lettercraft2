@@ -31,12 +31,14 @@
 .accordion-button:not(.collapsed) {
     color: #000000;
 }
-#loom-companion-mv3{
+
+#loom-companion-mv3 {
     display: none;
-    
+
 }
+
 .rc-anchor-normal {
-    width:95% !important;
+    width: 95% !important;
 }
 
 
@@ -55,22 +57,24 @@
     position: fixed;
     top: 40%;
     right: 50px !important;
-    transform-origin:center right;
+    transform-origin: center right;
     rotate: -91deg;
     border: 2px solid #0089CF;
 }
-.get-a-qoute-btn:hover{
-    transform: scale(1.05);
-    
 
-   
+.get-a-qoute-btn:hover {
+    transform: scale(1.05);
+
+
+
     box-shadow: 0px 4px 15px rgb(0 0 0 / 25%);
-   
-   
+
+
 }
-.get-a-qoute-btn span{
+
+.get-a-qoute-btn span {
     font-family: 'dm-bold';
-  color: #0089CF;
+    color: #0089CF;
 }
 
 
@@ -129,6 +133,16 @@ main {
 .offcanvas-title {
     font-family: 'Lato-bold';
     font-size: 25px;
+}
+
+.rew-count {
+    color: #0189CF;
+    font-family: "dm-medium";
+    font-size: 48px;
+    font-style: normal;
+
+    line-height: 1.5;
+    /* 116.667% */
 }
 
 .logo {
@@ -284,10 +298,11 @@ main {
 
 }
 
-.mybtn2:hover i{
+.mybtn2:hover i {
     color: #000000 !important;
 }
-.sample-card-title1{
+
+.sample-card-title1 {
     font-family: 'dm-medium';
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     padding: 24px;
@@ -296,7 +311,8 @@ main {
     cursor: pointer;
 
 }
-.sample-card-title1 span{
+
+.sample-card-title1 span {
     font-family: 'dm-medium';
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     padding: 24px;
@@ -305,6 +321,7 @@ main {
     cursor: pointer;
 
 }
+
 .mybtn2 {
     font-family: 'dm-medium';
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
@@ -314,11 +331,12 @@ main {
     cursor: pointer;
 
 }
+
 .mybtn2:hover {
     font-family: 'dm-medium';
     font-size: clamp(16px, calc(1.2vw + 1px), 24px);
     padding: 24px;
-    color:#000000;
+    color: #000000;
     padding: 0;
     cursor: pointer;
 
@@ -1222,8 +1240,9 @@ section {
 
     color: #3C3B3B;
 }
+
 .paragrap-t {
-   
+
     font-family: 'dm-medium';
     font-style: normal;
     font-weight: 400;
@@ -1231,14 +1250,17 @@ section {
 
     color: #3C3B3B;
 }
+
 .paragrap-t li {
-   
-   color: #0089CF;
+
+    color: #0089CF;
 }
-.paragrap-t li span{
-   
+
+.paragrap-t li span {
+
     color: #3C3B3B;
- }
+}
+
 .paragrap-dash {
     font-family: 'dm-medium';
     font-style: normal;
@@ -1791,7 +1813,7 @@ section {
     color: #000;
     font-size: clamp(13px, calc(1vw + 1px), 20px);
     font-family: 'Lato-bold';
-    
+
     justify-content: left;
     align-items: center;
 }
@@ -2259,7 +2281,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .navbar .container-fluid {
         padding: 0 60px;
     }
-    .qoute-sec{
+
+    .qoute-sec {
         height: 60%;
     }
 
@@ -2450,32 +2473,37 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 @media(max-width:991px) {
     .get-a-qoute-btn {
-        
+
         right: 22px !important;
     }
+
     .rew-count {
         width: 70px;
     }
-    
-    .mob-img-z{
+
+    .mob-img-z {
         width: 15%;
     }
+
     .nv-tab-pic {
         height: 45px;
         width: 45px;
     }
+
     .pos-r span {
         top: 74%;
         left: 46%;
     }
+
     .my-pay-tabs {
         display: flex;
         flex-direction: column;
     }
+
     #nav-tabContent {
-      border: none;
+        border: none;
         background: #FFF;
-       margin-bottom: 5%;
+        margin-bottom: 5%;
     }
 
     .my-sec-h {
@@ -2501,11 +2529,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .owl-theme.silder-text .owl-nav.disabled+.owl-dots {
         margin-top: -21px;
     }
+
     .owl-theme.silder-text2 .owl-nav.disabled+.owl-dots {
         margin-top: 8px;
     }
 
-   
+
 
     .font-siz {
         font-size: 14px !important;
@@ -2712,9 +2741,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         width: 40%;
         border-radius: 12%;
         padding: 2%;
-        
+
     }
-  
+
 
     .border-left {
         border: none !important;
@@ -2891,10 +2920,12 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .navbar .container-fluid {
         padding: 0px 16px;
     }
+
     .pos-r span {
         top: 70%;
         left: 40%;
     }
+
     .ab-tag-img {
         display: flex;
         flex-direction: column;
@@ -3011,6 +3042,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         margin-top: 50% !important;
         margin-left: -40% !important;
     }
+
     .about-right-img-2 {
 
         width: 68%;
@@ -3161,7 +3193,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .explore-icons {
         width: 60%;
     }
-    
+
 
 
 }
