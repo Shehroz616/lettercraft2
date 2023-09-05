@@ -140,7 +140,7 @@ main {
 .rew-count {
     color: #0189CF;
     font-family: "dm-medium";
-    font-size: 48px;
+    font-size: clamp(26px,calc(2.5vw + 11px), 48px);
     font-style: normal;
 
     line-height: 1.5;
@@ -1285,6 +1285,14 @@ section {
 
 .paragrap {
     padding-top: 5% !important;
+    font-family: 'dm-medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(14px, calc(1.2vw + 1px), 28px);
+
+    color: #3C3B3B;
+}
+.paragrap-why {
     font-family: 'dm-medium';
     font-style: normal;
     font-weight: 400;
@@ -2512,28 +2520,31 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
-    /* .my-drop {
-        max-width: 654px;
-        width:100%;
-        border-radius: 8px;
-        background: #FFF;
-        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+    .my-drop {
+        width: 100%;
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
     }
     
     .my-drop2 {
-        width:100%;
-        max-width: 320px;
-        border-radius: 8px;
-        background: #FFF;
-        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
     }
+
+    
     .my-drop-3 {
         width: 100%;
-        max-width: 770px;
-        border-radius: 8px;
-        background: #FFF;
-        box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.15);
-    } */
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
+    }
+
 
     .g-recaptcha {
         transform: scale(0.9);
@@ -2677,12 +2688,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         padding-right: 5px;
     }
 
-    .res-nav {
-        width: 100%;
-        border: none;
-        box-shadow: none;
-        padding: 0;
-    }
+
 
     .my-nav {
         padding-left: 0px;
