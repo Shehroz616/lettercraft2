@@ -483,7 +483,7 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 1.8;
-
+padding: 0 5px;
     color: #3C3B3B;
     font-size: clamp(14px, calc(1vw + 9px), 30px);
 
@@ -1524,6 +1524,13 @@ section {
     color: black;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
+.nav.nav-tabs1 .nav-link {
+    padding: 7px 8px;
+    font-weight: 500;
+    font-family: 'dm-regular';
+    color: black;
+    font-size: clamp(20px, calc(1.1vw + 1px), 24px);
+}
 
 .blue-textt {
     font-family: 'dm-medium';
@@ -1544,14 +1551,26 @@ section {
 .nav.nav-tabs .nav-link {
     border: none;
 }
+.nav.nav-tabs1 .nav-link {
+    border: none;
+}
 
 .nav.nav-tabs .nav-link.active {
+    font-family: 'dm-regular';
+text-decoration: underline;
+    color: #0089CF;
+    font-weight: 500;
+    font-size: clamp(20px, calc(1.1vw + 1px), 24px);
+}
+.nav.nav-tabs1 .nav-link.active {
+    border-radius: 15px 15px 0px 0px;
     font-family: 'dm-regular';
   border:1px solid #DCDCDC;
     color: #0089CF;
     font-weight: 500;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
+
 
 .nav-tabs .nav-link.my-tab {
 
