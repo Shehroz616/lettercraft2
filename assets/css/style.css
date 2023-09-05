@@ -30,6 +30,7 @@
 
 .accordion-button:not(.collapsed) {
     color: #000000;
+    box-shadow: none !important;
 }
 
 #loom-companion-mv3 {
