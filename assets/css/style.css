@@ -140,7 +140,7 @@ main {
 .rew-count {
     color: #0189CF;
     font-family: "dm-medium";
-    font-size: clamp(26px,calc(2.5vw + 11px), 48px);
+    font-size: clamp(20px,calc(2.5vw + 11px), 48px);
     font-style: normal;
 
     line-height: 1.5;
