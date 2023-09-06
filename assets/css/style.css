@@ -1,31 +1,31 @@
 @font-face {
     font-family: "Lato-bold";
-    src: url("/assets/Lato/Lato-Bold.ttf");
+    src: url("../Lato/Lato-Bold.ttf");
 }
 
 @font-face {
     font-family: "Lato-regular";
-    src: url("/assets/Lato/Lato-Regular.ttf");
+    src: url("../Lato/Lato-Regular.ttf");
 }
 
 @font-face {
     font-family: "Lato-thin";
-    src: url("/assets/Lato/Lato-Thin.ttf");
+    src: url("../Lato/Lato-Thin.ttf");
 }
 
 @font-face {
     font-family: "dm-bold";
-    src: url("/assets/dm-sans/DMSans-Bold.ttf");
+    src: url("../dm-sans/DMSans-Bold.ttf");
 }
 
 @font-face {
     font-family: "dm-medium";
-    src: url("/assets/dm-sans/DMSans-Medium.ttf");
+    src: url("../dm-sans/DMSans-Medium.ttf");
 }
 
 @font-face {
     font-family: "dm-regular";
-    src: url("/assets/dm-sans/DMSans-Regular.ttf");
+    src: url("../dm-sans/DMSans-Regular.ttf");
 }
 
 .accordion-button:not(.collapsed) {
