@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letter Craft</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="assets/images/Favicon (1).png" alt="letter craft logo" />
+    <script src="assets/js/nav-s.js"></script>
+    <meta name="description"
+        content="Letter Crafts is your translation partner for over 80 languages. Our team of native translators and industry experts cater to all your translation needs!">
+
+</head>
+
+<body>
+    <header w3-include-html="navbar.html">
+
+    </header>
+    <main>
+        <section class="">
+
+            <div class="container mt-5 mb-5 pb-5">
+                <div class="row">
+
+
+                    <div class="cn-sec  pt-2">
+                        <img class="w-30" src="assets/images/image 1.png " alt="logo">
+                        <div class="latter-craft text-center mt-3 b-5 px-lg-0 px-3">
+                            
+
+                            THANK YOU <span>FOR WRITTING TO US<span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer w3-include-html="footer.html">
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+        includeHTML();
+
+        let boxs = document.querySelectorAll(".service-block")
+        let overlay = document.getElementById("overlay-sec")
+        boxs.forEach(box => {
+            box.addEventListener("mouseover", function () {
+                overlay.style.display = "block";
+                box.style.zIndex = "5"
+                box.style.transform = "scale(1.1)"
+            })
+        });
+
+
+        overlay.addEventListener("mouseover", function () {
+            overlay.style.display = "none";
+            boxs.forEach(box => {
+                box.style.zIndex = "1"
+                box.style.transform = "scale(1)"
+            });
+        })
+
+
+        $('.item-slider-imges').owlCarousel({
+            nav: false,
+            dots: false,
+            margin: 30,
+            responsive: {
+                0: {
+                    // center: true,
+                    merge: true,
+                    items: 2.3,
+
+                },
+                576: {
+                    items: 3.2,
+                    merge: true,
+                },
+
+            }
+
+
+        });
+        $('.my-tabs-cr').owlCarousel({
+            nav: false,
+            dots: false,
+            items: 5,
+            // margin: 0,
+            responsive: {
+                0: {
+                    // center: true,
+                    merge: true,
+                    items: 2.5,
+
+                },
+                576: {
+                    items: 3.2,
+                    merge: true,
+                },
+
+            }
+
+
+        });
+        $('.review-samples').owlCarousel({
+            center: true,
+            nav: false,
+            items: 4,
+            loop: true,
+            margin: 80,
+            autoplay: true,
+            autoplayTimeout: 8000,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                576: {
+                    items: 1,
+
+                },
+                992: {
+                    items: 3,
+
+                }
+            }
+
+
+        });
+        $('.silder-text').owlCarousel({
+            center: true,
+            nav: false,
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 8000,
+
+
+        });
+        $('.brands').owlCarousel({
+            dots: false,
+            nav: true,
+            items: 5,
+            loop: true,
+            margin: 10,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 2000,
+
+
+            responsive: {
+                0: {
+                    items: 2.1,
+                    nav: false,
+                    mergeFit: false,
+                    dots: false,
+                },
+                992: {
+                    dots: false,
+                    nav: true,
+                },
+            }
+
+        });
+
+        $('.review-slider').owlCarousel({
+            nav: false,
+            items: 4,
+            loop: true,
+            margin: 30,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            responsive: {
+                0: {
+                    items: 1,
+
+                },
+                576: {
+                    items: 2,
+
+                },
+                992: {
+                    items: 4,
+
+                }
+            }
+        })
+        AOS.init();
+    </script>
+    <!-- WhatsHelp.io widget -->
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "WhatsApp Us", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "+6590360319", "welcomeMessage": "Hello", "zIndex": 999999, "btnColorScheme": "light" };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting);
+        };
+    </script>
+    <!-- /WhatsHelp.io widget -->
+</body>
+
+</html>

@@ -2039,7 +2039,7 @@ a {
 }
 
 .iner-tap {
-    color: #000;
+    color: #000 !important;
     font-family: 'dm-bold', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -2049,7 +2049,7 @@ a {
 }
 
 .iner-tap:hover {
-    color: #ffffff;
+    color: #ffffff !important;
     font-family: 'dm-bold', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -2392,6 +2392,31 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1200px) {
+    .my-drop {
+        width: 100%;
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
+    }
+    
+    .my-drop2 {
+        width: 100%;
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
+    }
+
+    
+    .my-drop-3 {
+        width: 100%;
+        border-radius: none;
+        background:none;
+        box-shadow:none;
+        border:none;
+    }
+
     .navbar .container-fluid {
         padding: 0 60px;
     }
@@ -2580,30 +2605,6 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 @media(max-width:991px) {
     .img-dot {
         width: 9px;
-    }
-    .my-drop {
-        width: 100%;
-        border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
-    }
-    
-    .my-drop2 {
-        width: 100%;
-        border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
-    }
-
-    
-    .my-drop-3 {
-        width: 100%;
-        border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
     }
 
 
