@@ -27,7 +27,17 @@
     font-family: "dm-regular";
     src: url("../dm-sans/DMSans-Regular.ttf");
 }
-
+.sucess-div{
+ 
+    width:50%;
+    margin:auto;
+   
+    padding-bottom: 5%;
+}
+.sucess-img-logo{
+    width:20%;
+   
+}
 .accordion-button:not(.collapsed) {
     color: #000000;
     box-shadow: none !important;
