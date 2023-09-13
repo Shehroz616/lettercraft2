@@ -27,6 +27,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 </head>
 
 <body>
+
     <header w3-include-html="navbar.html">
 
     </header>
@@ -2093,37 +2094,56 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form class="myform" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                                <div class="input-group flex-nowrap my-input mt-3">
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="/sucess.html"
+                                onsubmit="return validateForm()" method="post">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
 
-                                    <input type="text" class="form-control my-form-con" name="name" placeholder="Name"
-                                        aria-label="name" aria-describedby="addon-wrapping" required >
+                                        <input type="text" class="form-control my-form-con" type="text" name="name"
+                                            placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
 
+
+                                    </div>
+                                    <div class="formerror text-start mb-2">This feild is madatory</div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="email">
 
-                                    <input type="text" class="form-control my-form-con" name="email"
-                                        placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping" required>
+                                        <input type="text" class="form-control my-form-con" type="text" name="email"
+                                            placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start mb-2">This feild is madatory</div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
 
-                                    <input type="text" class="form-control my-form-con" name="phone" placeholder="Phone"
-                                        aria-label="phone" aria-describedby="addon-wrapping" required>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="phone">
 
+                                        <input type="text" class="form-control my-form-con" type="number" name="phone"
+                                            placeholder="Phone" aria-label="phone" aria-describedby="addon-wrapping">
+
+                                    </div>
+                                    <div class="formerror text-start mb-2">This feild is madatory</div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="sourcelanguage">
 
-                                    <input type="text" class="form-control my-form-con" name="source_language"
-                                        placeholder="Source Language" aria-label="srclng"
-                                        aria-describedby="addon-wrapping" required>
+                                        <input type="text" class="form-control my-form-con" type="text"
+                                            name="source_language" placeholder="Source Language" aria-label="srclng"
+                                            aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start mb-2">This feild is madatory</div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="tolanguage">
 
-                                    <input type="text" class="form-control my-form-con" name="to_language"
-                                        placeholder="To Language" aria-label="tolang" aria-describedby="addon-wrapping" required>
+                                        <input type="text" class="form-control my-form-con" type="text"
+                                            name="to_language" placeholder="To Language" aria-label="tolang"
+                                            aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start">this feild is madatory</div>
                                 </div>
                                 <div class="input-group flex-nowrap my-input">
 
@@ -2240,7 +2260,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                 box.style.transform = "scale(1)"
             });
         })
-      
+
 
         $('.item-slider-imges').owlCarousel({
             nav: false,
@@ -2403,9 +2423,29 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             }
         })
         AOS.init();
+        function validateForm() {
+            let x = document.forms["myForm"]["name"].value;
 
+            if (x == "") {
+
+                forEach(input - group){
+                    if
+                }
+            }
+            let b = document.forms["myForm"]["to_language"].value;
+
+            if (b == "") {
+                alert("lanuage must be filled out");
+                return false;
+            }
+
+        }
 
     </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NTT6G" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- WhatsHelp.io widget -->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
