@@ -2110,18 +2110,11 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="/sucess.html"
-                                onsubmit="validateForm(event)" method="post">
-                                <div>
-                                    <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
-
-                                        <input type="text" class="form-control my-form-con" type="text" name="name"
-                                            placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
-
-
-                                    </div>
-                                    <div class="formerror text-start mb-3"></div>
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="/sucess.html" onsubmit="validateForm(event)" method="post">
+                                <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
+                                    <input type="text" class="form-control my-form-con" type="text" name="name" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
                                 </div>
+                                <div class="formerror text-start mb-3"></div>
                                 <div>
                                     <div class="input-group flex-nowrap my-input mb-0" id="e-mail">
 
@@ -2164,15 +2157,16 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 <div class="input-group flex-nowrap my-input">
 
                                     <select class="form-select my-form-con" name="delivery_opt[]">
-                                        <option disabled="" selected="">Delivery Option</option>
-                                        <option>By email</option>
-                                        <option>By Singpost (free)</option>
-                                        <option>By courier ($20)</option>
-                                        <option>Self collect - by prior appointment from Notary office @The Adelphi
-                                        </option>
+                                        <option disabled="" selected="" value="" hidden>Delivery Option</option>
+                                        <option value="By email">By email</option>
+                                        <option value="By Singpost (free)">By Singpost (free)</option>
+                                        <option value="By courier ($20)">By courier ($20)</option>
+                                        <option value="Self collect">Self collect - by prior appointment from Notary office @The Adelphi</option>
                                     </select>
 
                                 </div>
+                                
+                                <div class="formerror text-start mb-3"></div>
                                 <div class="input-group my-input">
 
                                     <textarea class="form-control my-form-con" name="message" style="height: 108px;"
@@ -2266,7 +2260,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             allFeilds.forEach(input => {
                 if (input.value == "") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
-                        input.parentElement.nextElementSibling.innerHTML = "this feild is required"
+                        input.parentElement.nextElementSibling.innerHTML = "This feild is required"
                     }
                 }
                 else{
