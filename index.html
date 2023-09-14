@@ -2258,6 +2258,23 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
 
         includeHTML();
+         function validateForm(e) {
+            e.preventDefault()
+            let myForm  = document.forms["myForm"]
+            let allFeilds = myForm.querySelectorAll("[name]")
+
+            allFeilds.forEach(input => {
+                if (input.value == "") {
+                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
+                        input.parentElement.nextElementSibling.innerHTML = "this feild is required"
+                    }
+                }
+                else{
+                    input.parentElement.nextElementSibling.innerHTML = ""
+                }
+            });
+        }
+
 
         let boxs = document.querySelectorAll(".service-block")
         let overlay = document.getElementById("overlay-sec")
@@ -2445,23 +2462,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         })
         AOS.init();
 
-        function validateForm(e) {
-            e.preventDefault()
-            let myForm  = document.forms["myForm"]
-            let allFeilds = myForm.querySelectorAll("[name]")
-
-            allFeilds.forEach(input => {
-                if (input.value == "") {
-                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
-                        input.parentElement.nextElementSibling.innerHTML = "this feild is required"
-                    }
-                }
-                else{
-                    input.parentElement.nextElementSibling.innerHTML = ""
-                }
-            });
-        }
-
+       
     </script>
     <!-- WhatsHelp.io widget -->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
