@@ -2283,6 +2283,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                 }
             });
 
+            let recaptcha = grecaptcha.getResponse() 
+            console.log(recaptcha)
+            if (recaptcha == "") {
+                e.preventDefault()
+                alert("Asd")
+
+            }
+
             if (error <= -7) {
             }
             else{
