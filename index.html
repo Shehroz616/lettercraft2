@@ -2197,6 +2197,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                     </label>
                                 </div>
                                 <div class="mt-3" data-netlify-recaptcha="true"></div>
+                                <div class="captcha-error"></div>
                                 <div class="text-lg-start text-center">
                                     <button type="submit" class="btn mybtn mt-3 form-btn">Submit</button>
                                 </div>
@@ -2265,7 +2266,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             
             let myForm  = document.forms["myForm"]
             let allFeilds = myForm.querySelectorAll("[name]")
-
+            let captchaError = document.querySelector(".captcha-error")
             let error = 0
             allFeilds.forEach(input => {
                 console.log(input.type)
@@ -2287,8 +2288,10 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             console.log(recaptcha)
             if (recaptcha == "") {
                 e.preventDefault()
-                alert("Asd")
-
+                captchaError.innerHTML = "Fill this captcha"
+            }
+            else{
+                captchaError.innerHTML = ""
             }
 
             if (error <= -7) {
