@@ -2266,17 +2266,23 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let myForm  = document.forms["myForm"]
             let allFeilds = myForm.querySelectorAll("[name]")
 
+            let error = 0
             allFeilds.forEach(input => {
-                console.log(input)
                 if (input.value == "" && input.type != "hidden") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This feild is required"
+                        error++
                     }
                 }
                 else{
                     input.parentElement.nextElementSibling.innerHTML = ""
+                        error--
                 }
             });
+
+            if (error <= -7) {
+                e.target.submit()
+            }
         }
 
 
