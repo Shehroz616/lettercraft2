@@ -35,10 +35,10 @@
     font-size: clamp(9px, calc(1.1vw + 1px), 12px);
 }
 .captcha-error{
-    
+    text-align: left;   
     font-family: 'dm-regular';
-    color:red;
-    font-size: clamp(9px, calc(1.1vw + 1px), 12px);
+    color:red !important;
+    font-size: clamp(9px, calc(1.1vw + 1px), 12px) !important;
 }
 .sucess-div{
  
