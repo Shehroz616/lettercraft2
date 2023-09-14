@@ -2262,7 +2262,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
         includeHTML();
          function validateForm(e) {
-            e.preventDefault()
+            
             let myForm  = document.forms["myForm"]
             let allFeilds = myForm.querySelectorAll("[name]")
 
@@ -2284,7 +2284,9 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             });
 
             if (error <= -7) {
-                e.target.submit()
+            }
+            else{
+                e.preventDefault()
             }
         }
 
