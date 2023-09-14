@@ -2267,6 +2267,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let allFeilds = myForm.querySelectorAll("[name]")
 
             allFeilds.forEach(input => {
+                console.log(input)
                 if (input.value == "") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This feild is required"
