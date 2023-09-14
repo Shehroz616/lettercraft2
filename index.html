@@ -2268,6 +2268,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
             let error = 0
             allFeilds.forEach(input => {
+                console.log(input.type)
                 if (input.value == "" && input.type != "hidden") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This feild is required"
@@ -2275,8 +2276,10 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                     }
                 }
                 else{
-                    input.parentElement.nextElementSibling.innerHTML = ""
+                    if (input.type != "hidden") {
+                        input.parentElement.nextElementSibling.innerHTML = ""
                         error--
+                    }
                 }
             });
 
