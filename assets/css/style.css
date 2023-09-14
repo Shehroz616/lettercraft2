@@ -27,15 +27,9 @@
     font-family: "dm-regular";
     src: url("../dm-sans/DMSans-Regular.ttf");
 }
-.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
-    position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    min-width: 0;
-    margin-bottom: 25px;
-}
+
 .formerror{
-    display: none;
+    
     font-family: 'dm-regular';
     color:red;
     font-size: clamp(9px, calc(1.1vw + 1px), 12px);

@@ -24,9 +24,25 @@ accurate and reliable language solutions.">
 , Financial Translation Singapore, Website Translation Services, Language Translation Experts, Singaporean Translation Company, Best Translation Services,
 Singapore Language Translation,  Multilingual Translation Services, Singapore Translation Agency, Official Document Translation, Notarized Translation Singapore
 ,Marketing Translation Services, Singaporean Translators" />
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K4NTT6G');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NTT6G" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript)-->
+
 
     <header w3-include-html="navbar.html">
 
@@ -2095,7 +2111,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
                             </div>
                             <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="/sucess.html"
-                                onsubmit="return validateForm()" method="post">
+                                onsubmit="validateForm(event)" method="post">
                                 <div>
                                     <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
 
@@ -2104,26 +2120,26 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
 
                                     </div>
-                                    <div class="formerror text-start mb-2">This feild is madatory</div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div>
-                                    <div class="input-group flex-nowrap my-input mb-0" id="email">
+                                    <div class="input-group flex-nowrap my-input mb-0" id="e-mail">
 
-                                        <input type="text" class="form-control my-form-con" type="text" name="email"
+                                        <input type="text" class="form-control my-form-con" type="email" name="email"
                                             placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
 
                                     </div>
-                                    <div class="formerror text-start mb-2">This feild is madatory</div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div>
 
-                                    <div class="input-group flex-nowrap my-input mb-0" id="phone">
+                                    <div class="input-group flex-nowrap my-input mb-0" id="phonenum">
 
-                                        <input type="text" class="form-control my-form-con" type="number" name="phone"
+                                        <input type="text" class="form-control my-form-con" type="phone" name="phone"
                                             placeholder="Phone" aria-label="phone" aria-describedby="addon-wrapping">
 
                                     </div>
-                                    <div class="formerror text-start mb-2">This feild is madatory</div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div>
                                     <div class="input-group flex-nowrap my-input mb-0" id="sourcelanguage">
@@ -2133,7 +2149,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                             aria-describedby="addon-wrapping">
 
                                     </div>
-                                    <div class="formerror text-start mb-2">This feild is madatory</div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div>
                                     <div class="input-group flex-nowrap my-input mb-0" id="tolanguage">
@@ -2143,7 +2159,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                             aria-describedby="addon-wrapping">
 
                                     </div>
-                                    <div class="formerror text-start">this feild is madatory</div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div class="input-group flex-nowrap my-input">
 
@@ -2162,6 +2178,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                     <textarea class="form-control my-form-con" name="message" style="height: 108px;"
                                         placeholder="Your Message" aria-label="With textarea"></textarea>
                                 </div>
+                                <div class="formerror text-start mb-3"></div>
                                 <div class="form-check text-start mt-2">
                                     <input class="form-check-input my-check " name="urgent_request" type="checkbox"
                                         value="" id="flexCheckDefault">
@@ -2260,6 +2277,8 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                 box.style.transform = "scale(1)"
             });
         })
+
+
 
 
         $('.item-slider-imges').owlCarousel({
@@ -2417,36 +2436,33 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
                 },
                 992: {
+
+
                     items: 4,
                 }
 
             }
         })
         AOS.init();
-        function validateForm() {
-            let x = document.forms["myForm"]["name"].value;
 
-            if (x == "") {
+        function validateForm(e) {
+            e.preventDefault()
+            let myForm  = document.forms["myForm"]
+            let allFeilds = myForm.querySelectorAll("[name]")
 
-                forEach(input - group){
-                    if
+            allFeilds.forEach(input => {
+                if (input.value == "") {
+                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
+                        input.parentElement.nextElementSibling.innerHTML = "this feild is required"
+                    }
                 }
-            }
-            let b = document.forms["myForm"]["to_language"].value;
-
-            if (b == "") {
-                alert("lanuage must be filled out");
-                return false;
-            }
-
+                else{
+                    input.parentElement.nextElementSibling.innerHTML = ""
+                }
+            });
         }
 
     </script>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NTT6G" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
     <!-- WhatsHelp.io widget -->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
     <script>
@@ -2456,6 +2472,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         };
     </script>
     <!-- /WhatsHelp.io widget -->
+   
 
 </body>
 
