@@ -2268,7 +2268,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
             allFeilds.forEach(input => {
                 console.log(input)
-                if (input.value == "") {
+                if (input.value == "" && input.type != "hidden") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This feild is required"
                     }
