@@ -34,6 +34,12 @@
     color:red;
     font-size: clamp(9px, calc(1.1vw + 1px), 12px);
 }
+.captcha-error{
+    
+    font-family: 'dm-regular';
+    color:red;
+    font-size: clamp(9px, calc(1.1vw + 1px), 12px);
+}
 .sucess-div{
  
     width:50%;
