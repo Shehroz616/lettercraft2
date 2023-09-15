@@ -27,6 +27,11 @@
     font-family: "dm-regular";
     src: url("../dm-sans/DMSans-Regular.ttf");
 }
+.nav.nav-tabs1 .nav-link {
+    border: none;
+    width: 25%;
+}
+
 
 .formerror{
     
