@@ -323,44 +323,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         crossorigin="anonymous"></script>
     <script>
  includeHTML();
-         function validateForm(e) {
-            
-            let myForm  = document.forms["myForm"]
-            let allFeilds = myForm.querySelectorAll("[name]")
-            let captchaError = document.querySelector(".captcha-error")
-            let error = 0
-            allFeilds.forEach(input => {
-                console.log(input.type)
-                if (input.value == "" && input.type != "hidden") {
-                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
-                        input.parentElement.nextElementSibling.innerHTML = "This feild is required"
-                        error++
-                    }
-                }
-                else{
-                    if (input.type != "hidden") {
-                        input.parentElement.nextElementSibling.innerHTML = ""
-                        error--
-                    }
-                }
-            });
-
-            let recaptcha = grecaptcha.getResponse() 
-            console.log(recaptcha)
-            if (recaptcha == "") {
-                e.preventDefault()
-                captchaError.innerHTML = "Fill this captcha"
-            }
-            else{
-                captchaError.innerHTML = ""
-            }
-
-            if (error <= -7) {
-            }
-            else{
-                e.preventDefault()
-            }
-        }
+        
 
 
 

@@ -124,57 +124,72 @@ accurate and reliable language solutions.">
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
-                                <div class="input-group flex-nowrap my-input mt-3">
-
-                                    <input type="text" class="form-control my-form-con" name="name" placeholder="Name"
-                                        aria-label="name" aria-describedby="addon-wrapping" required>
-
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="sucess.html"
+                                onsubmit="validateForm(event)" method="post">
+                                <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
+                                    <input type="text" class="form-control my-form-con" type="text" name="name"
+                                        placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div class="formerror text-start mb-3"></div>
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="e-mail">
 
-                                    <input type="text" class="form-control my-form-con" name="email"
-                                        placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping"
-                                        required>
+                                        <input type="text" class="form-control my-form-con" type="email" name="email"
+                                            placeholder="E-mail" aria-label="email" aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
 
-                                    <input type="text" class="form-control my-form-con" name="phone" placeholder="Phone"
-                                        aria-label="phone" aria-describedby="addon-wrapping" required>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="phonenum">
 
+                                        <input type="text" class="form-control my-form-con" type="phone" name="phone"
+                                            placeholder="Phone" aria-label="phone" aria-describedby="addon-wrapping">
+
+                                    </div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="sourcelanguage">
 
-                                    <input type="text" class="form-control my-form-con" name="source_language"
-                                        placeholder="Source Language" aria-label="srclng"
-                                        aria-describedby="addon-wrapping" required>
+                                        <input type="text" class="form-control my-form-con" type="text"
+                                            name="source_language" placeholder="Source Language" aria-label="srclng"
+                                            aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
-                                <div class="input-group flex-nowrap my-input">
+                                <div>
+                                    <div class="input-group flex-nowrap my-input mb-0" id="tolanguage">
 
-                                    <input type="text" class="form-control my-form-con" name="to_language"
-                                        placeholder="To Language" aria-label="tolang" aria-describedby="addon-wrapping"
-                                        required>
+                                        <input type="text" class="form-control my-form-con" type="text"
+                                            name="to_language" placeholder="To Language" aria-label="tolang"
+                                            aria-describedby="addon-wrapping">
 
+                                    </div>
+                                    <div class="formerror text-start mb-3"></div>
                                 </div>
                                 <div class="input-group flex-nowrap my-input">
 
                                     <select class="form-select my-form-con" name="delivery_opt[]">
-                                        <option disabled="" selected="">Delivery Option</option>
-                                        <option>By email</option>
-                                        <option>By Singpost (free)</option>
-                                        <option>By courier ($20)</option>
-                                        <option>Self collect - by prior appointment from Notary office @The Adelphi
-                                        </option>
+                                        <option disabled="" selected="" value="" hidden>Delivery Option</option>
+                                        <option value="By email">By email</option>
+                                        <option value="By Singpost (free)">By Singpost (free)</option>
+                                        <option value="By courier ($20)">By courier ($20)</option>
+                                        <option value="Self collect">Self collect - by prior appointment from Notary
+                                            office @The Adelphi</option>
                                     </select>
 
                                 </div>
+
+                                <div class="formerror text-start mb-3"></div>
                                 <div class="input-group my-input">
 
                                     <textarea class="form-control my-form-con" name="message" style="height: 108px;"
                                         placeholder="Your Message" aria-label="With textarea"></textarea>
                                 </div>
+                                <div class="formerror text-start mb-3"></div>
                                 <div class="form-check text-start mt-2">
                                     <input class="form-check-input my-check " name="urgent_request" type="checkbox"
                                         value="" id="flexCheckDefault">
@@ -190,6 +205,7 @@ accurate and reliable language solutions.">
                                     </label>
                                 </div>
                                 <div class="mt-3" data-netlify-recaptcha="true"></div>
+                                <div class="captcha-error"></div>
                                 <div class="text-lg-start text-center">
                                     <button type="submit" class="btn mybtn mt-3 form-btn">Submit</button>
                                 </div>
