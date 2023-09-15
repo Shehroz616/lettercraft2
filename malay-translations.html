@@ -235,17 +235,38 @@ accurate and reliable language solutions.">
             <div class="container  ">
                 <div class="row g-lg-5 px-3 px-lg-0 gy-3">
                     <div class="col-lg-4 px-lg-5">
-                        <a target="_blank" href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
+                        <a href="assets/pdf/Malay/SAMPLE-Malaysian-SPM.pdf">
                             <div class="card sampl-car" data-aos="flip-right">
                                 <div class="card-body text-center ">
-                                    <div class="blue-textt mt-3 mb-2 text-center">Sample</div>
-                                    
-                                    <img  loading="lazy" class="img-fluid w-100" src="assets/images/img-sample-1.png" alt="">
-                                    <div class="card-title  text-center sample-heading">
-                                        Notarization of Translations
+                                    <img loading="lazy" class="img-fluid  w-100"
+                                        src="assets/images/img-sample-1.png" alt="certification of translations">
+
+
+                                    <div class="card-title  text-center sample-heading">Certificate Translations
+
                                     </div>
                                     <div class="price-text">
-                                        Starting from:&nbsp;<span>S$215.00 </span>
+                                        Starting from: &nbsp;<span>S$215.00</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 px-lg-5">
+                        <a href="assets/pdf/Malay/Dummy-Malay-Birth-Certificate.pdf">
+                            <div class="card sampl-car" data-aos="flip-right">
+                                <div class="card-body text-center ">
+                                    <img loading="lazy" class="img-fluid  w-100"
+                                        src="assets/images/img-sample-2.png" alt="birth certification translations">
+
+
+                                    <div class="card-title  text-center sample-heading">Birth Certificate
+
+                                    </div>
+                                    <div class="price-text">
+                                        Starting from: &nbsp;<span>S$38.00</span>
                                     </div>
 
                                 </div>
@@ -253,57 +274,27 @@ accurate and reliable language solutions.">
                         </a>
                     </div>
                     <div class="col-lg-4 px-lg-5">
-                        <a target="_blank" href="assets/pdf/Malay/Dummy-Malay-Birth-Certificate.pdf">
+                        <a href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
                             <div class="card sampl-car" data-aos="flip-right">
-                                <div class="blue-textt mt-3 mb-2 text-center">Sample</div>
                                 <div class="card-body text-center ">
-                                  
-                                    <img  loading="lazy" class="img-fluid  w-100" src="assets/images/img-sample-2.png" alt="">
+                                    <img loading="lazy" class="img-fluid  w-100"
+                                        src="assets/images/img-sample-3.png" alt="notarization translations">
                                     <div class="card-title  text-center sample-heading">
-                                        Birth Certificate
-                                    </div>
-                                    <div class="price-text">
-                                        Starting from:&nbsp; <span>S$38.00</span>
+                                        Notarization of
+                                        Translations
 
                                     </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 px-lg-5">
-                        <a target="_blank" href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
-                            <div class="card sampl-car" data-aos="flip-right">
-                                <div class="blue-textt mt-3 mb-2 text-center">Sample</div>
-                                <div class="card-body text-center ">
-                                   
-                                    
-                                    <img  loading="lazy" class="img-fluid  w-100" src="assets/images/img-sample-3.png" alt="">
-                                    <div class="card-title  text-center sample-heading">
-                                       Certificate Translations
-                                    </div>
                                     <div class="price-text">
-                                        <span>Free Of Cost</span>
-
+                                        &nbsp;<span>Free Of Cost</span>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </a>
                     </div>
 
                 </div>
-                <!-- <div class="owl-carousel owl-theme review-samples">
-                        <div class="item   px-5 px-lg-0">
-
-                            
-                        </div>
-                        <div class="item   px-5 px-lg-0">
-                            
-                        </div>
-                        <div class="item   px-5 px-lg-0">
-                            
-                        </div>
-                    </div> -->
+                
                 <div class="text-center mt-5">
                   
                     <a href="samples-form.html"  class="btn mybtn mt-3 mb-3">See More</a>
@@ -1328,6 +1319,45 @@ accurate and reliable language solutions.">
     <script>
 
 includeHTML();
+function validateForm(e) {
+            
+            let myForm  = document.forms["myForm"]
+            let allFeilds = myForm.querySelectorAll("[name]")
+            let captchaError = document.querySelector(".captcha-error")
+            let error = 0
+            allFeilds.forEach(input => {
+                console.log(input.type)
+                if (input.value == "" && input.type != "hidden") {
+                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
+                        input.parentElement.nextElementSibling.innerHTML = "This feild is required"
+                        error++
+                    }
+                }
+                else{
+                    if (input.type != "hidden") {
+                        input.parentElement.nextElementSibling.innerHTML = ""
+                        error--
+                    }
+                }
+            });
+
+            let recaptcha = grecaptcha.getResponse() 
+            console.log(recaptcha)
+            if (recaptcha == "") {
+                e.preventDefault()
+                captchaError.innerHTML = "Fill this captcha"
+            }
+            else{
+                captchaError.innerHTML = ""
+            }
+
+            if (error <= -7) {
+            }
+            else{
+                e.preventDefault()
+            }
+        }
+
 
 let boxs = document.querySelectorAll(".service-block")
 let overlay = document.getElementById("overlay-sec")

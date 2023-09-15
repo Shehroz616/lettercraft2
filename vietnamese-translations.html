@@ -122,9 +122,11 @@ accurate and reliable language solutions.">
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="sucess.html" onsubmit="validateForm(event)" method="post">
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="sucess.html"
+                                onsubmit="validateForm(event)" method="post">
                                 <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
-                                    <input type="text" class="form-control my-form-con" type="text" name="name" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" type="text" name="name"
+                                        placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
                                 </div>
                                 <div class="formerror text-start mb-3"></div>
                                 <div>
@@ -173,11 +175,12 @@ accurate and reliable language solutions.">
                                         <option value="By email">By email</option>
                                         <option value="By Singpost (free)">By Singpost (free)</option>
                                         <option value="By courier ($20)">By courier ($20)</option>
-                                        <option value="Self collect">Self collect - by prior appointment from Notary office @The Adelphi</option>
+                                        <option value="Self collect">Self collect - by prior appointment from Notary
+                                            office @The Adelphi</option>
                                     </select>
 
                                 </div>
-                                
+
                                 <div class="formerror text-start mb-3"></div>
                                 <div class="input-group my-input">
 
@@ -279,7 +282,7 @@ accurate and reliable language solutions.">
                                 <div class="card-body text-center ">
                                     <img  loading="lazy" class="img-fluid  w-100" src="assets/images/vita-3.png" alt="">
                                 <div>
-                                    <div class="card-title  text-center sample-heading">Family Register
+                                    <div class="card-title  text-center sample-heading">Family Registeration
                                         <br class="d-lg-block d-none">
                                     </div>
                                     <div class="price-text">
@@ -1319,6 +1322,45 @@ accurate and reliable language solutions.">
     <script>
 
 includeHTML();
+function validateForm(e) {
+            
+            let myForm  = document.forms["myForm"]
+            let allFeilds = myForm.querySelectorAll("[name]")
+            let captchaError = document.querySelector(".captcha-error")
+            let error = 0
+            allFeilds.forEach(input => {
+                console.log(input.type)
+                if (input.value == "" && input.type != "hidden") {
+                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
+                        input.parentElement.nextElementSibling.innerHTML = "This feild is required"
+                        error++
+                    }
+                }
+                else{
+                    if (input.type != "hidden") {
+                        input.parentElement.nextElementSibling.innerHTML = ""
+                        error--
+                    }
+                }
+            });
+
+            let recaptcha = grecaptcha.getResponse() 
+            console.log(recaptcha)
+            if (recaptcha == "") {
+                e.preventDefault()
+                captchaError.innerHTML = "Fill this captcha"
+            }
+            else{
+                captchaError.innerHTML = ""
+            }
+
+            if (error <= -7) {
+            }
+            else{
+                e.preventDefault()
+            }
+        }
+
 
 let boxs = document.querySelectorAll(".service-block")
 let overlay = document.getElementById("overlay-sec")

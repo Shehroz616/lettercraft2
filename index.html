@@ -3,14 +3,14 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7CGBP0QV8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7CGBP0QV8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-C7CGBP0QV8');
-</script>
+        gtag('config', 'G-C7CGBP0QV8');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lettercrafts - Professional Translation Services in Singapore
@@ -1088,15 +1088,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
 
                         <div class="col-lg-4 px-lg-5">
-                            <a href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
+                            <a href="assets/pdf/Malay/SAMPLE-Malaysian-SPM.pdf">
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img loading="lazy" class="img-fluid  w-100"
-                                            src="assets/images/img-sample-1.png" alt="">
+                                            src="assets/images/img-sample-1.png" alt="certification of translations">
 
 
-                                        <div class="card-title  text-center sample-heading">Notarization of
-                                            Translations
+                                        <div class="card-title  text-center sample-heading">Certificate Translations
 
                                         </div>
                                         <div class="price-text">
@@ -1113,7 +1112,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img loading="lazy" class="img-fluid  w-100"
-                                            src="assets/images/img-sample-2.png" alt="">
+                                            src="assets/images/img-sample-2.png" alt="birth certification translations">
 
 
                                         <div class="card-title  text-center sample-heading">Birth Certificate
@@ -1128,12 +1127,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                             </a>
                         </div>
                         <div class="col-lg-4 px-lg-5">
-                            <a href="assets/pdf/Malay/SAMPLE-Malaysian-SPM.pdf">
+                            <a href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img loading="lazy" class="img-fluid  w-100"
-                                            src="assets/images/img-sample-3.png" alt="">
-                                        <div class="card-title  text-center sample-heading">Certificate Translations
+                                            src="assets/images/img-sample-3.png" alt="notarization translations">
+                                        <div class="card-title  text-center sample-heading">
+                                            Notarization of
+                                            Translations
 
                                         </div>
                                         <div class="price-text">
@@ -2119,9 +2120,11 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="sucess.html" onsubmit="validateForm(event)" method="post">
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="sucess.html"
+                                onsubmit="validateForm(event)" method="post">
                                 <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
-                                    <input type="text" class="form-control my-form-con" type="text" name="name" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
+                                    <input type="text" class="form-control my-form-con" type="text" name="name"
+                                        placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
                                 </div>
                                 <div class="formerror text-start mb-3"></div>
                                 <div>
@@ -2170,11 +2173,12 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                         <option value="By email">By email</option>
                                         <option value="By Singpost (free)">By Singpost (free)</option>
                                         <option value="By courier ($20)">By courier ($20)</option>
-                                        <option value="Self collect">Self collect - by prior appointment from Notary office @The Adelphi</option>
+                                        <option value="Self collect">Self collect - by prior appointment from Notary
+                                            office @The Adelphi</option>
                                     </select>
 
                                 </div>
-                                
+
                                 <div class="formerror text-start mb-3"></div>
                                 <div class="input-group my-input">
 
@@ -2260,10 +2264,10 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
 
- includeHTML();
-         function validateForm(e) {
-            
-            let myForm  = document.forms["myForm"]
+        includeHTML();
+        function validateForm(e) {
+
+            let myForm = document.forms["myForm"]
             let allFeilds = myForm.querySelectorAll("[name]")
             let captchaError = document.querySelector(".captcha-error")
             let error = 0
@@ -2275,7 +2279,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                         error++
                     }
                 }
-                else{
+                else {
                     if (input.type != "hidden") {
                         input.parentElement.nextElementSibling.innerHTML = ""
                         error--
@@ -2283,23 +2287,23 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                 }
             });
 
-            let recaptcha = grecaptcha.getResponse() 
+            let recaptcha = grecaptcha.getResponse()
             console.log(recaptcha)
             if (recaptcha == "") {
                 e.preventDefault()
                 captchaError.innerHTML = "Fill this captcha"
             }
-            else{
+            else {
                 captchaError.innerHTML = ""
             }
 
             if (error <= -7) {
             }
-            else{
+            else {
                 e.preventDefault()
             }
         }
-  
+
 
 
         let boxs = document.querySelectorAll(".service-block")
@@ -2488,7 +2492,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         })
         AOS.init();
 
-       
+
     </script>
     <!-- WhatsHelp.io widget -->
     <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
@@ -2499,7 +2503,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         };
     </script>
     <!-- /WhatsHelp.io widget -->
-   
+
 
 </body>
 
