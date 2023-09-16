@@ -430,6 +430,11 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script> includeHTML();
+         includeHTML();
+            let inputElem = document.querySelector("input");
+        addEventListener('load', function (e) {
+                inputElem.focus();
+            })
          function validateForm(e) {
             
             let myForm  = document.forms["myForm"]

@@ -23,20 +23,23 @@ accurate and reliable language solutions.">
     <meta name="keywords"
         content="French to English Translation, English to French Translation, Mandarin Translation Services, Simplified French Translation, Traditional French Translation, Professional French Translators, French Document Translation, Certified French Translation, Legal Translation in French, Business Translation in French,Technical French Translation, Medical Translation to French, Financial Translation Services, Website Translation in French, French Language Experts, French Translation  Mandarin ,Document Translators, Notarized French Translation, Marketing Translation in French, French interpretation Services">
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-K4NTT6G');</script>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K4NTT6G');</script>
     <!-- End Google Tag Manager -->
 </head>
 
 <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NTT6G"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-   <!-- End Google Tag Manager (noscript)-->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4NTT6G" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript)-->
     <header w3-include-html="navbar.html">
 
     </header>
@@ -123,15 +126,18 @@ accurate and reliable language solutions.">
                         </div>
                     </div>
 
-                    <div class="col-lg-5 ms-auto col-12 px-lg-0 px-4 mt-5" id="form-sec"">
+                    <div class="col-lg-5 ms-auto col-12 px-lg-0 px-4 mt-5" id="form-sec">
                         <div id="onscrl" class="qo-form text-center pt-5 px-4 pb-5">
                             <div class="head">
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="success.html" onsubmit="validateForm(event)" method="post">
-                                <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
-                                    <input type="text" class="form-control my-form-con" type="text" name="name" placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
+                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="success.html"
+                                onsubmit="validateForm(event)" method="post">
+                                <div class="input-group flex-nowrap my-input mt-3 mb-0">
+                                    <input type="text" class="form-control my-form-con" type="text" name="name"
+                                        id="name" placeholder="Name" aria-label="name"
+                                        aria-describedby="addon-wrapping">
                                 </div>
                                 <div class="formerror text-start mb-3"></div>
                                 <div>
@@ -180,11 +186,12 @@ accurate and reliable language solutions.">
                                         <option value="By email">By email</option>
                                         <option value="By Singpost (free)">By Singpost (free)</option>
                                         <option value="By courier ($20)">By courier ($20)</option>
-                                        <option value="Self collect">Self collect - by prior appointment from Notary office @The Adelphi</option>
+                                        <option value="Self collect">Self collect - by prior appointment from Notary
+                                            office @The Adelphi</option>
                                     </select>
 
                                 </div>
-                                
+
                                 <div class="formerror text-start mb-3"></div>
                                 <div class="input-group my-input">
 
@@ -215,7 +222,9 @@ accurate and reliable language solutions.">
                         </div>
 
                     </div>
+
                 </div>
+            </div>
             </div>
         </section>
         <section>
@@ -313,7 +322,7 @@ accurate and reliable language solutions.">
             <a href="samples-forms.html">
                 <div class="text-center">
 
-                      <a href="samples-forms.html" class="btn mybtn mt-3 mb-3">See More</a>
+                    <a href="samples-forms.html" class="btn mybtn mt-3 mb-3">See More</a>
                 </div>
             </a>
 
@@ -1381,8 +1390,8 @@ accurate and reliable language solutions.">
     <script>
 
 
- includeHTML();
- let scrollForm = document.querySelector("#onscrl")
+        includeHTML();
+        let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
@@ -1390,9 +1399,9 @@ accurate and reliable language solutions.">
             nameInput.focus()
         }
 
-         function validateForm(e) {
-            
-            let myForm  = document.forms["myForm"]
+        function validateForm(e) {
+
+            let myForm = document.forms["myForm"]
             let allFeilds = myForm.querySelectorAll("[name]")
             let captchaError = document.querySelector(".captcha-error")
             let error = 0
@@ -1404,7 +1413,7 @@ accurate and reliable language solutions.">
                         error++
                     }
                 }
-                else{
+                else {
                     if (input.type != "hidden") {
                         input.parentElement.nextElementSibling.innerHTML = ""
                         error--
@@ -1412,19 +1421,19 @@ accurate and reliable language solutions.">
                 }
             });
 
-            let recaptcha = grecaptcha.getResponse() 
+            let recaptcha = grecaptcha.getResponse()
             console.log(recaptcha)
             if (recaptcha == "") {
                 e.preventDefault()
                 captchaError.innerHTML = "Fill this captcha"
             }
-            else{
+            else {
                 captchaError.innerHTML = ""
             }
 
             if (error <= -7) {
             }
-            else{
+            else {
                 e.preventDefault()
             }
         }
@@ -1576,16 +1585,16 @@ accurate and reliable language solutions.">
         AOS.init();
     </script>
 
- 
+
     <!-- WhatsHelp.io widget -->
-<script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-<script>
-  var wa_btnSetting = {"btnColor":"#16BE45","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"+6590360319","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
-  window.onload = () => {
-    _waEmbed(wa_btnSetting);
-  };
-</script>
-<!-- /WhatsHelp.io widget -->
+    <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "WhatsApp Us", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "right", "whatsAppNumber": "+6590360319", "welcomeMessage": "Hello", "zIndex": 999999, "btnColorScheme": "light" };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting);
+        };
+    </script>
+    <!-- /WhatsHelp.io widget -->
 </body>
 
 </html>

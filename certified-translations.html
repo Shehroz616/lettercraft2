@@ -133,8 +133,8 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                             </div>
                             <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="success.html"
                                 onsubmit="validateForm(event)" method="post">
-                                <div class="input-group flex-nowrap my-input mt-3 mb-0" id="name">
-                                    <input type="text" class="form-control my-form-con" type="text" name="name"
+                                <div class="input-group flex-nowrap my-input mt-3 mb-0" >
+                                    <input type="text" class="form-control my-form-con" type="text" name="name"id="name"
                                         placeholder="Name" aria-label="name" aria-describedby="addon-wrapping">
                                 </div>
                                 <div class="formerror text-start mb-3"></div>
@@ -418,12 +418,9 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                         </div>
                     </div>
                 </div>
-                <a href="#form">
-                    <div class="text-center  ">
-                        <button type="button" class="btn mybtn mt-3 mb-3">Start Translation
-                            Now</button>
-                    </div>
-                </a>
+                <div class="text-center">
+                    <button class="btn mybtn mt-3 mb-3 srt-tra" onclick="scrollto()">Start Translation Now</button>
+                </div>
             </div>
         </section>
         <section class="pb-3">
