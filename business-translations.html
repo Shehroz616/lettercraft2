@@ -1339,8 +1339,13 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
 
-            includeHTML();
+let scrollForm = document.querySelector("#onscrl")
+        let nameInput = document.querySelector("#name")
 
+        function scrollto() {
+            scrollForm.scrollIntoView()
+            nameInput.focus()
+        }
 
             $('.item-slider-imges').owlCarousel({
                 nav: false,

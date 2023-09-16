@@ -1317,6 +1317,14 @@ accurate and reliable language solutions.">
 
       
  includeHTML();
+ let scrollForm = document.querySelector("#onscrl")
+        let nameInput = document.querySelector("#name")
+
+        function scrollto() {
+            scrollForm.scrollIntoView()
+            nameInput.focus()
+        }
+
          function validateForm(e) {
             
             let myForm  = document.forms["myForm"]
