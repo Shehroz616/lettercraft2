@@ -1384,10 +1384,12 @@ accurate and reliable language solutions.">
             else{
                 scrollForm.scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => {
-                    const offset = 190; // Adjust this value as needed
+                    const offset = 190;
                     window.scrollBy(0, -offset); // Scroll up by the desired offset
-                    nameInput.focus()
                 }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 800);
             }
         }
 
