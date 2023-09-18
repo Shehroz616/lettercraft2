@@ -631,7 +631,10 @@ padding: 0 5px;
     line-height: 24px;
     font-size: clamp(14px, calc(0.8vw + 5px), 20px);
 }
-
+.back-s a{
+    text-decoration: underline;
+    color: #0089CF;
+}
 .circle-b {
     position: absolute;
     display: flex;
