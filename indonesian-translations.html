@@ -1381,7 +1381,12 @@ accurate and reliable language solutions.">
 
         function scrollto() {
             scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
-            nameInput.focus()
+            
+            setTimeout(() => {
+                const offset = 90; // Adjust this value as needed
+                window.scrollBy(0, -offset); // Scroll up by the desired offset
+                nameInput.focus()
+            }, 700);
         }
 
         function validateForm(e) {

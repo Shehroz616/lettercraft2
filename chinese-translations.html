@@ -130,7 +130,7 @@ accurate and reliable language solutions.">
                                 Get a Quote in 30 mins
 
                             </div>
-                            <form data-netlify="true" data-netlify-recaptcha="true" name="myForm" action="success.html"
+                            <form data-netlify="true" data-netlify-recaptcha="true"  name="myForm" action="success.html"
                                 onsubmit="validateForm(event)" method="post">
                                 <div class="input-group flex-nowrap my-input mt-3 mb-0" >
                                     <input type="text" class="form-control my-form-con" type="text" name="name"id="name"
@@ -204,7 +204,7 @@ accurate and reliable language solutions.">
                                         Urgent request
                                     </label>
                                 </div>
-                                <div class="form-check  text-start mt-2">
+                                <div  class="form-check  text-start mt-2">
                                     <input class="form-check-input my-check" name="authentication" type="checkbox"
                                         value="" id="flexCheckChecked" checked>
                                     <label class="form-check-label" for="flexCheckChecked">
@@ -1377,8 +1377,13 @@ accurate and reliable language solutions.">
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
-            nameInput.focus()
+            scrollForm.scrollIntoView({ behavior: 'instant' });
+            
+            setTimeout(() => {
+                const offset = 90; // Adjust this value as needed
+                window.scrollBy(0, -offset); // Scroll up by the desired offset
+                nameInput.focus()
+            }, 700);
         }
 
         function validateForm(e) {
