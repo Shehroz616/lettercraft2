@@ -1380,7 +1380,7 @@ accurate and reliable language solutions.">
             console.log(navigator.userAgent)
             if (navigator.userAgent.match(/iPhone/i)) {
                 scrollForm.scrollIntoView({ behavior: 'instant' });
-                alert("Asd")
+                
                     const offset = 90; // Adjust this value as needed
                     window.scrollBy(0, -offset); // Scroll up by the desired offset
                     nameInput.focus()
@@ -1389,6 +1389,7 @@ accurate and reliable language solutions.">
             else{
                 scrollForm.scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => {
+                    alert("not iphone")
                     const offset = 90; // Adjust this value as needed
                     window.scrollBy(0, -offset); // Scroll up by the desired offset
                     nameInput.focus()
