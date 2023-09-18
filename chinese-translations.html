@@ -1377,7 +1377,6 @@ accurate and reliable language solutions.">
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-
             if (navigator.userAgent.match(/iPhone/i)) {
                 scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
                 nameInput.focus()
@@ -1385,7 +1384,7 @@ accurate and reliable language solutions.">
             else{
                 scrollForm.scrollIntoView({ behavior: 'smooth' });
                 setTimeout(() => {
-                    const offset = 90; // Adjust this value as needed
+                    const offset = 190; // Adjust this value as needed
                     window.scrollBy(0, -offset); // Scroll up by the desired offset
                     nameInput.focus()
                 }, 700);
