@@ -2274,13 +2274,13 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
         if (navigator.userAgent.match(/iPhone/i) && navigator.userAgent.match(/Safari/i)) {
             function scrollto() {
-                scrollForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
                 nameInput.focus()
             }
         }
         else{
             function scrollto() {
-                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
+                scrollForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 nameInput.focus()
             }
         }
