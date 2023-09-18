@@ -1325,7 +1325,7 @@ let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView()
+            scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
             nameInput.focus()
         }
 

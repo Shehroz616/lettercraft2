@@ -1340,7 +1340,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let nameInput = document.querySelector("#name")
 
             function scrollto() {
-                scrollForm.scrollIntoView()
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
                 nameInput.focus()
             }
 
