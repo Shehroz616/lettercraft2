@@ -1378,14 +1378,13 @@ accurate and reliable language solutions.">
 
         function scrollto() {
             console.log(navigator.userAgent)
-            if (navigator.userAgent.match(/iPhone/i)) {
-                scrollForm.scrollIntoView({ behavior: 'instant' });
+                scrollForm.scrollIntoView({ behavior: 'instant' , block: 'start' });
                     alert("iphone")
                     const offset = 90; // Adjust this value as needed
                     window.scrollBy(0, -offset); // Scroll up by the desired offset
                     nameInput.focus()
                 
-            }
+            
             
         }
 
