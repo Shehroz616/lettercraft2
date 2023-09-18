@@ -488,17 +488,15 @@ main {
     font-size: 24px;
     font-family: 'dm-bold', sans-serif;
     font-style: normal;
-    font-weight: 500;
     line-height: 130%;
 
 }
 
 .data span {
-    color: #AFAFAF;
+    color: rgba(75, 75, 75, 0.50);
     font-size: 24px;
-    font-family: 'dm-bold', sans-serif;
+    font-family: 'dm-regular', sans-serif;
     font-style: normal;
-    font-weight: 500;
     line-height: 130%;
 
 }
