@@ -2272,18 +2272,10 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
-        if (navigator.userAgent.match(/iPhone/i)) {
             function scrollto() {
                 scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
                 nameInput.focus()
             }
-        }
-        else{
-            function scrollto() {
-                scrollForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                nameInput.focus()
-            }
-        }
 
 
 
