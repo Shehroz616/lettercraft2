@@ -1377,13 +1377,20 @@ accurate and reliable language solutions.">
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView({ behavior: 'instant' });
-            
-            setTimeout(() => {
+            if (navigator.userAgent.match(/iPhone/i)) {
+                scrollForm.scrollIntoView({ behavior: 'instant' });
+                setTimeout(() => {
+                    const offset = 90; // Adjust this value as needed
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                    nameInput.focus()
+                }, 700);
+            }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
                 const offset = 90; // Adjust this value as needed
                 window.scrollBy(0, -offset); // Scroll up by the desired offset
                 nameInput.focus()
-            }, 700);
+            }
         }
 
         function validateForm(e) {
