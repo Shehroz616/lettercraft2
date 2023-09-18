@@ -1368,17 +1368,24 @@ accurate and reliable language solutions.">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
  includeHTML();
- let scrollForm = document.querySelector("#onscrl")
+        let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
-            
-            setTimeout(() => {
-                const offset = 90; // Adjust this value as needed
-                window.scrollBy(0, -offset); // Scroll up by the desired offset
+            if (navigator.userAgent.match(/iPhone/i)) {
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
                 nameInput.focus()
-            }, 700);
+            }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const offset = 190;
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 1000);
+            }
         }
 
          function validateForm(e) {

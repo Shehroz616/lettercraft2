@@ -2270,11 +2270,22 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
-            function scrollto() {
+        function scrollto() {
+            if (navigator.userAgent.match(/iPhone/i)) {
                 scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
-                
                 nameInput.focus()
             }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const offset = 190;
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 1000);
+            }
+        }
 
 
 
