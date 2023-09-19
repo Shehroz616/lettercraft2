@@ -2299,6 +2299,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let allFeilds = myForm.querySelectorAll("[name]")
             let captchaError = document.querySelector(".captcha-error")
             let error = 0
+            e.preventDefault()
             allFeilds.forEach(input => {
                 console.log(input.type)
                 if (input.value == "" && input.type != "hidden") {
@@ -2326,8 +2327,10 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             }
 
             if (error <= -8) {
+                alert("Asd")
             }
             else {
+                alert("else")
                 e.preventDefault()
             }
         }
