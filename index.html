@@ -12,7 +12,7 @@
         gtag('config', 'G-C7CGBP0QV8');
     </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Lettercrafts - Professional Translation Services in Singapore
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -223,12 +223,11 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                     </div>
 
                     <div class="col-xl-5  col-6  ms-auto me-lg-0 me-auto  order-lg-2 order-1">
-                        <img class="img-fluid w-100 p-lg-5 d-lg-block d-none" data-aos="fade-left"
-                            data-aos-delay="8000" src="assets/images/86086531.png" alt="all-translation-img">
+                        <img class="img-fluid w-100 p-lg-5 d-lg-block d-none" src="assets/images/86086531.png" alt="all-translation-img">
                     </div>
                 </div>
                 <div class="cn-sec text-center px-lg-0 px-3 d-lg-block d-none">
-                    <div class="latter-craft pt-lg-0 pt-lg-5">
+                    <div class="latter-craft pt-lg-0 pt-5">
                         LETTER CRAFTS<span> TRANSLATIONS<span>
                     </div>
                     <div class="paragraph px-sm-5 ">Professional Translators Delivering High
@@ -1092,14 +1091,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
 
 
                         <div class="col-lg-4 px-lg-5">
-                            <a href="assets/pdf/Malay/SAMPLE-Malaysian-SPM.pdf">
+                            <a target="_blank" href="assets/pdf/certificates/certificate-of-translation.pdf">
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img class="img-fluid  w-100"
                                             src="assets/images/img-sample-1.png" alt="certification of translations">
 
 
-                                        <div class="card-title  text-center sample-heading">Certificate of Translation
+                                        <div class="card-title  text-center sample-heading">Certificate of Translation Assurance
 
                                         </div>
                                         <div class="price-text">
@@ -1112,7 +1111,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                         </div>
 
                         <div class="col-lg-4 px-lg-5">
-                            <a href="assets/pdf/Malay/Dummy-Malay-Birth-Certificate.pdf">
+                            <a target="_blank" href="assets/pdf/Malay/Dummy-Malay-Birth-Certificate.pdf">
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img class="img-fluid  w-100"
@@ -1131,14 +1130,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                             </a>
                         </div>
                         <div class="col-lg-4 px-lg-5">
-                            <a href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
+                            <a target="_blank" href="assets/pdf/Malay/Dummy-Notary-Cert.pdf">
                                 <div class="card sampl-car" data-aos="flip-right">
                                     <div class="card-body text-center ">
                                         <img class="img-fluid  w-100"
                                             src="assets/images/img-sample-3.png" alt="notarization translations">
                                         <div class="card-title  text-center sample-heading">
                                             Notarization of
-                                            Translations
+                                            Translation
 
                                         </div>
                                         <div class="price-text">
@@ -2106,14 +2105,13 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                                 WE OFFER <span>CERTIFIED TRANSLATION <span>
                             </div>
                             <div class="col-lg-10">
-                                <div class="paragraph pb-3">Letter Crafts is a trusted translation<br
-                                        class="d-lg-block d-none"> services provider in
-                                    Singapore,<br class="d-lg-block d-none"> delivering accurate and high-quality<br
-                                        class="d-lg-block d-none"> translations worldwide. We help<br
-                                        class="d-lg-block d-none">
-                                    individuals and organizations<br class="d-lg-block d-none"> communicate effectively
-                                    by bridging <br class="d-lg-block d-none"> language barriers
-                                    through<br class="d-lg-block d-none"> professional translations.
+                                <div class="paragraph pb-3">Letter Crafts is a trusted translation
+                                     services provider in
+                                    Singapore, delivering accurate and high-quality
+                                    translations worldwide. We help
+                                    individuals and organizations communicate effectively
+                                    by bridging  language barriers
+                                    through professional translations.
                                 </div>
                             </div>
                         </div>
@@ -2273,8 +2271,20 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView()
-            nameInput.focus()
+            if (navigator.userAgent.match(/iPhone/i)) {
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
+                nameInput.focus()
+            }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const offset = 100;
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 1000);
+            }
         }
 
 
@@ -2317,7 +2327,7 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
                 captchaError.innerHTML = ""
             }
 
-            if (error <= -7) {
+            if (error <= -8) {
             }
             else {
                 e.preventDefault()

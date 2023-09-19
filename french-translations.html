@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Lettercrafts - French Language Translation Services in Singapore
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -208,7 +208,7 @@ accurate and reliable language solutions.">
                                 </div>
                                 <div class="form-check  text-start mt-2">
                                     <input class="form-check-input my-check" name="authentication" type="checkbox"
-                                        value="" id="flexCheckChecked" checked>
+                                        value="" id="flexCheckChecked" >
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Notarization & Authentication required
                                     </label>
@@ -261,7 +261,7 @@ accurate and reliable language solutions.">
                             <div class="card sampl-car" data-aos="flip-right">
                                 <div class="blue-textt mt-3 mb-2 text-center">Sample</div>
                                 <div class="card-body text-center ">
-                                    <img loading="lazy" class="img-fluid w-100" src="assets/images/french-1.png" alt="">
+                                    <img loading="lazy" class="img-fluid w-100" src="assets/images/french-3.png" alt="">
                                     <div>
                                         <div class="card-title  text-center sample-heading">
                                             Driving License
@@ -302,12 +302,10 @@ accurate and reliable language solutions.">
                             <div class="card sampl-car" data-aos="flip-right">
                                 <div class="blue-textt mt-3 mb-2 text-center">Sample</div>
                                 <div class="card-body text-center ">
-                                    <img loading="lazy" class="img-fluid  w-100" src="assets/images/french-3.png"
+                                    <img loading="lazy" class="img-fluid  w-100" src="assets/images/french-1.png"
                                         alt="">
                                     <div>
-                                        <div class="card-title  text-center sample-heading">Certificate of
-                                            Translation<br class="d-lg-block d-none">
-                                        </div>
+                                        <div class="card-title  text-center sample-heading">Vocational Certificate</div>
                                         <div class="price-text">
                                             Starting from:&nbsp;<span>S$42.00 </span>
                                         </div>
@@ -1395,8 +1393,20 @@ accurate and reliable language solutions.">
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView()
-            nameInput.focus()
+            if (navigator.userAgent.match(/iPhone/i)) {
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
+                nameInput.focus()
+            }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const offset = 190;
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 1000);
+            }
         }
 
         function validateForm(e) {
@@ -1431,7 +1441,7 @@ accurate and reliable language solutions.">
                 captchaError.innerHTML = ""
             }
 
-            if (error <= -7) {
+            if (error <= -8) {
             }
             else {
                 e.preventDefault()

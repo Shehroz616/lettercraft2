@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <title>Lettercrafts - Spanish Language Translation Services in Singapore
     </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -60,7 +60,7 @@ accurate and reliable language solutions.">
 
                                 <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2" style="color: #0189cf;"></i>
                                     <div>Birth certificates, Educational and other Personal Documents for PR, Citizenship applications.
-                                       .</div>
+                                       </div>
                                 </div>
 
                                 <div class="d-flex mb-2"><i class="fa-solid fa-check pe-3 pt-2" style="color: #0189cf;"></i>
@@ -194,7 +194,7 @@ accurate and reliable language solutions.">
                                 </div>
                                 <div class="form-check  text-start mt-2">
                                     <input class="form-check-input my-check" name="authentication" type="checkbox"
-                                        value="" id="flexCheckChecked" checked>
+                                        value="" id="flexCheckChecked" >
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Notarization & Authentication required
                                     </label>
@@ -1321,13 +1321,25 @@ accurate and reliable language solutions.">
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
 
-includeHTML();
-let scrollForm = document.querySelector("#onscrl")
+        includeHTML();
+        let scrollForm = document.querySelector("#onscrl")
         let nameInput = document.querySelector("#name")
 
         function scrollto() {
-            scrollForm.scrollIntoView()
-            nameInput.focus()
+            if (navigator.userAgent.match(/iPhone/i)) {
+                scrollForm.scrollIntoView({ behavior: 'instant', block: 'start' });
+                nameInput.focus()
+            }
+            else{
+                scrollForm.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    const offset = 190;
+                    window.scrollBy(0, -offset); // Scroll up by the desired offset
+                }, 700);
+                setTimeout(() => {
+                    nameInput.focus()
+                }, 1000);
+            }
         }
 
 function validateForm(e) {
@@ -1362,7 +1374,7 @@ function validateForm(e) {
                 captchaError.innerHTML = ""
             }
 
-            if (error <= -7) {
+            if (error <= -8) {
             }
             else{
                 e.preventDefault()
