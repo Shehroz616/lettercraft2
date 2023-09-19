@@ -1404,52 +1404,14 @@ accurate and reliable language solutions.">
             let error = 0
             allFeilds.forEach(input => {
                 console.log(input.type)
-                if (input.value == "" && input.type != "hidden") {
+                if (input.value == "" && input.type != "hidden" && input.type != "checkbox") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This field is required"
                         error++
                     }
                 }
                 else{
-                    if (input.type != "hidden") {
-                        input.parentElement.nextElementSibling.innerHTML = ""
-                        error--
-                    }
-                }
-            });
-
-            let recaptcha = grecaptcha.getResponse() 
-            console.log(recaptcha)
-            if (recaptcha == "") {
-                e.preventDefault()
-                captchaError.innerHTML = "Fill this captcha"
-            }
-            else{
-                captchaError.innerHTML = ""
-            }
-
-            if (error <= -8) {
-            }
-            else{
-                e.preventDefault()
-            }
-        } includeHTML();
-         function validateForm(e) {
-            
-            let myForm  = document.forms["myForm"]
-            let allFeilds = myForm.querySelectorAll("[name]")
-            let captchaError = document.querySelector(".captcha-error")
-            let error = 0
-            allFeilds.forEach(input => {
-                console.log(input.type)
-                if (input.value == "" && input.type != "hidden") {
-                    if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
-                        input.parentElement.nextElementSibling.innerHTML = "This field is required"
-                        error++
-                    }
-                }
-                else{
-                    if (input.type != "hidden") {
+                    if (input.type != "hidden" && input.type != "checkbox") {
                         input.parentElement.nextElementSibling.innerHTML = ""
                         error--
                     }
@@ -1472,7 +1434,7 @@ accurate and reliable language solutions.">
                 e.preventDefault()
             }
         }
-
+        
         let boxs = document.querySelectorAll(".service-block")
         let overlay = document.getElementById("overlay-sec")
         boxs.forEach(box => {

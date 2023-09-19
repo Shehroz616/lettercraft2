@@ -2299,17 +2299,17 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let allFeilds = myForm.querySelectorAll("[name]")
             let captchaError = document.querySelector(".captcha-error")
             let error = 0
-            e.preventDefault()
             allFeilds.forEach(input => {
                 console.log(input.type)
-                if (input.value == "" && input.type != "hidden") {
+                if (input.value == "" && input.type != "hidden" && input.type != "checkbox") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This field is required"
                         error++
                     }
                 }
                 else {
-                    if (input.type != "hidden") {
+                    if (input.type != "hidden" && input.type != "checkbox") {
+                        console.log(input.type)
                         input.parentElement.nextElementSibling.innerHTML = ""
                         error--
                     }

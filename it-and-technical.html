@@ -1390,14 +1390,14 @@ Singapore Language Translation,  Multilingual Translation Services, Singapore Tr
             let error = 0
             allFeilds.forEach(input => {
                 console.log(input.type)
-                if (input.value == "" && input.type != "hidden") {
+                if (input.value == "" && input.type != "hidden" && input.type != "checkbox") {
                     if (input.parentElement.nextElementSibling.classList.contains("formerror")) {
                         input.parentElement.nextElementSibling.innerHTML = "This field is required"
                         error++
                     }
                 }
                 else{
-                    if (input.type != "hidden") {
+                    if (input.type != "hidden" && input.type != "checkbox") {
                         input.parentElement.nextElementSibling.innerHTML = ""
                         error--
                     }
