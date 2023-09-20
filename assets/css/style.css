@@ -27,48 +27,58 @@
     font-family: "dm-regular";
     src: url("../dm-sans/DMSans-Regular.ttf");
 }
+
 .nav.nav-tabs1 .nav-link {
     border: none;
     width: 25%;
 }
 
 
-.formerror{
-    
+.formerror {
+
     font-family: 'dm-regular';
-    color:red;
+    color: red;
     font-size: clamp(9px, calc(1.1vw + 1px), 12px);
 }
-.captcha-error{
-    text-align: left;   
+
+.captcha-error {
+    text-align: left;
     font-family: 'dm-regular';
-    color:red !important;
+    color: red !important;
     font-size: clamp(9px, calc(1.1vw + 1px), 12px) !important;
 }
-.sucess-div{
- 
-    width:50%;
-    margin:auto;
-   
+
+.sucess-div {
+
+    width: 50%;
+    margin: auto;
+
     padding-bottom: 5%;
 }
-.sucess-img-logo{
-    width:20%;
-   
+
+.sucess-img-logo {
+    width: 20%;
+
 }
+
 .accordion-button:not(.collapsed) {
     color: #000000;
     box-shadow: none !important;
 }
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active
-{ 
-   
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+
     color: #FFFFFF;
     background: #0089CF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-color: #0089CF;
 
 }
+
 #loom-companion-mv3 {
     display: none;
 
@@ -155,6 +165,7 @@ main {
     outline: none;
     box-shadow: none !important;
 }
+
 .mob-img-z {
     width: 15%;
 }
@@ -179,7 +190,7 @@ main {
 .rew-count {
     color: #0189CF;
     font-family: "dm-medium", sans-serif;
-    font-size: clamp(25px,calc(2.5vw + 11px), 48px);
+    font-size: clamp(25px, calc(2.5vw + 11px), 48px);
     font-style: normal;
 
     line-height: 1.5;
@@ -202,10 +213,11 @@ main {
     height: 45px;
     width: 45px;
 }
-.owl-theme.review-slider.owl-carousel.owl-drag .owl-item
-{
+
+.owl-theme.review-slider.owl-carousel.owl-drag .owl-item {
     padding: 0 5px;
 }
+
 .navbar-nav .nav-item:hover {
 
     color: #000000;
@@ -512,7 +524,7 @@ main {
     font-style: normal;
     font-weight: 400;
     line-height: 1.8;
-padding: 0 5px;
+    padding: 0 5px;
     color: #3C3B3B;
     font-size: clamp(14px, calc(1vw + 9px), 30px);
 
@@ -631,10 +643,12 @@ padding: 0 5px;
     line-height: 24px;
     font-size: clamp(14px, calc(0.8vw + 5px), 20px);
 }
-.back-s a{
+
+.back-s a {
     text-decoration: underline;
     color: #0089CF;
 }
+
 .circle-b {
     position: absolute;
     display: flex;
@@ -662,6 +676,16 @@ padding: 0 5px;
 .need-lang-sampl span {
     color: #0089CF;
     text-decoration: underline;
+}
+
+.cog-payment .cog-row {
+
+    width: 100% !important;
+}
+
+.cog-section__inner.cog-section__inner--background {
+
+    margin-bottom: 89px !important;
 }
 
 .sample-images {
@@ -1324,6 +1348,7 @@ section {
 
     color: #3C3B3B;
 }
+
 .paragrap-why {
     font-family: 'dm-medium', sans-serif;
     font-style: normal;
@@ -1544,6 +1569,7 @@ section {
     color: black;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
+
 .nav.nav-tabs1 .nav-link {
     padding: 7px 8px;
     font-weight: 500;
@@ -1571,21 +1597,23 @@ section {
 .nav.nav-tabs .nav-link {
     border: none;
 }
+
 .nav.nav-tabs1 .nav-link {
     border: none;
 }
 
 .nav.nav-tabs .nav-link.active {
     font-family: 'dm-regular';
-text-decoration: underline;
+    text-decoration: underline;
     color: #0089CF;
     font-weight: 500;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
 }
+
 .nav.nav-tabs1 .nav-link.active {
     border-radius: 15px 15px 0px 0px;
     font-family: 'dm-regular';
-  border:1px solid #DCDCDC;
+    border: 1px solid #DCDCDC;
     color: #0089CF;
     font-weight: 500;
     font-size: clamp(20px, calc(1.1vw + 1px), 24px);
@@ -2141,8 +2169,8 @@ hr {
 
 .el-button {
     position: absolute !important;
-    margin-top: 25% !important;
-    margin-left: 49% !important;
+bottom: -165px !important;
+    right: 0px !important;
     border-radius: 24px !important;
     color: white !important;
     background: #0089CF !important;
@@ -2162,7 +2190,9 @@ hr {
 
 .strip-visa-imges {
     bottom: 30%;
-    left: 40%;
+    left: 50%;
+    transform: translate(-40%);
+    /* left: 40%; */
     position: absolute;
 }
 
@@ -2303,22 +2333,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width: 1400px) {
-    .el-button {
-        position: absolute !important;
-        margin-top: 24% !important;
-        margin-left: 36% !important;
-        border-radius: 24px !important;
-        color: white !important;
-        background: #0089CF !important;
-        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%) !important;
-        font-family: 'dm-bold' !important;
-        font-size: 1.5rem !important;
-        font-weight: 500 !important;
-        line-height: 1 !important;
-        border: none !important;
-        padding: 8px !important;
-        width: 30% !important;
-    }
+
     .form-btn {
         border-radius: 16px !important;
 
@@ -2409,26 +2424,26 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     .my-drop {
         width: 100%;
         border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
+        background: none;
+        box-shadow: none;
+        border: none;
     }
-    
+
     .my-drop2 {
         width: 100%;
         border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
+        background: none;
+        box-shadow: none;
+        border: none;
     }
 
-    
+
     .my-drop-3 {
         width: 100%;
         border-radius: none;
-        background:none;
-        box-shadow:none;
-        border:none;
+        background: none;
+        box-shadow: none;
+        border: none;
     }
 
     .navbar .container-fluid {
@@ -2479,22 +2494,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         box-shadow: 0px 6px 15px rgb(0 0 0 / 8%);
     }
 
-    .el-button {
-        position: absolute !important;
-        margin-top: 21% !important;
-        margin-left: 36% !important;
-        border-radius: 24px !important;
-        color: white !important;
-        background: #0089CF !important;
-        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%) !important;
-        font-family: 'dm-bold' !important;
-        font-size: 1.5rem !important;
-        font-weight: 500 !important;
-        line-height: 1 !important;
-        border: none !important;
-        padding: 8px !important;
-        width: 30% !important;
-    }
+
 
     .about-right-img-2 {
         display: none;
@@ -2559,27 +2559,14 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         box-shadow: 0px 6px 15px rgb(0 0 0 / 8%);
     }
 
-    .el-button {
-        position: absolute !important;
-        margin-top: 25% !important;
-        margin-left: 20% !important;
-
-        font-weight: 500 !important;
-        line-height: 0.3125rem !important;
-        border: none !important;
-        padding: 16px !important;
-    }
 
 
 
 
 
 
-    .strip-visa-imges {
-        bottom: 30%;
-        left: 30%;
-        position: absolute;
-    }
+
+    
 
     .exp-section-p {
         padding-top: 24px;
@@ -2617,6 +2604,45 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:991px) {
+    .cog-section__inner.cog-section__inner--background {
+
+        margin-bottom: 10px !important;
+    }
+    .strip-visa-imges {
+        
+        bottom: 250px !important;
+        left: 50%;
+        transform: translate(-40%);
+        /* left: 40%; */
+        position: absolute;
+    }
+
+    html .cog-cognito hr, :root:root:root:root:root .cog-cognito hr {
+        padding-bottom: 100px !important;
+        border: 0;
+        border-bottom: var(--border-width) hsla(var(--background-hsl), 0.6) var(--input__border-style);
+    }
+    
+    
+    
+    .el-button {
+        position: absolute !important;
+        
+        transform: translate(50%) !important ;
+       
+        right: 50% !important;
+        border-radius: 24px !important;
+        color: white !important;
+        background: #0089CF !important;
+        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%) !important;
+        font-family: 'dm-bold' !important;
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+        line-height: 1.3125rem !important;
+        border: none !important;
+        padding: 15px !important;
+        width: 30% !important;
+    }
     .img-dot {
         width: 9px;
     }
@@ -2639,7 +2665,7 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         width: 55px;
     }
 
-   
+
     .nv-tab-pic {
         height: 45px;
         width: 45px;
@@ -2841,27 +2867,8 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
         line-height: normal;
     }
 
-    .el-button {
-        position: absolute !important;
-        margin-top: 28% !important;
-        margin-left: 6% !important;
-        border-radius: 24px !important;
-        color: white !important;
-        background: #0089CF !important;
-        box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%) !important;
-        font-family: 'dm-bold' !important;
-        font-size: 17px !important;
-        font-weight: 500 !important;
-        line-height: 0.3125rem !important;
-        border: none !important;
-        padding: 16px !important;
-    }
 
-    .strip-visa-imges {
-        bottom: 30%;
-        left: 19%;
-        position: absolute;
-    }
+
 
     .mybtn {
         padding: 8px 12px;
@@ -3175,19 +3182,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 
 
 
-    .el-button {
-        position: absolute !important;
-        margin-top: 33% !important;
-        margin-right: -0% !important;
 
 
-    }
-
-    .strip-visa-imges {
-        bottom: 27%;
-        left: 5%;
-        position: absolute;
-    }
+  
 
     .img-bg-ex {
         width: 100%;
@@ -3195,11 +3192,6 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media(max-width:576px) {
-    .el-button {
-        position: absolute !important;
-        margin-top: 50% !important;
-        margin-left: -40% !important;
-    }
 
     .about-right-img-2 {
 
@@ -3223,17 +3215,9 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
     }
 
 
-    .el-button {
-        position: absolute !important;
-        margin-top: 49% !important;
-        margin-left: -76% !important;
-    }
 
-    .strip-visa-imges {
-        bottom: 22%;
-        left: 8%;
-        position: absolute;
-    }
+
+   
 
     html .cog-row,
     :root:root:root:root:root .cog-row {
@@ -3312,11 +3296,6 @@ html .cog-cognito--styled .cog-page__navigation .cog-button,
 }
 
 @media (max-width: 375px) {
-    .el-button {
-        position: absolute !important;
-        margin-top: 55% !important;
-        margin-left: -80% !important;
-    }
 
     .img-bg-ex {
         top: 140px;
